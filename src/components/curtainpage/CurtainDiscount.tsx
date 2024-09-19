@@ -15,7 +15,7 @@ export const CurtainDiscount = () => {
         </div>
         <div className="text-center mb-6">
           <h1 className="text-sm font-normal text-black/70">
-            Whether you're upgrading your living room, office, or exploring
+            Whether you&apos;re upgrading your living room, office, or exploring
             smart, motorized solutions, First Choice General Trading LLC offers
             a wide selection of curtains to suit your needs. Enhance your home
             with our exquisite curtain collection and enjoy the perfect blend of

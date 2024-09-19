@@ -44,10 +44,10 @@ const ContentSection: React.FC = () => {
             <br />
             We specialize in offering a wide range of high-quality interior
             products that elevate the aesthetics and comfort of any living or
-            working environment. Whether you're looking to revamp your living
-            space, create a modern office, or simply update your restaurant
-            interiors with the latest trends, our Dubai interior design company
-            is here to provide the best solutions.
+            working environment. Whether you&apos;re looking to revamp your
+            living space, create a modern office, or simply update your
+            restaurant interiors with the latest trends, our Dubai interior
+            design company is here to provide the best solutions.
           </p>
 
           {/* Buttons */}

@@ -38,7 +38,7 @@ const RugsContentSection: React.FC = () => {
           </h2>
           <p className="text-white mb-6 text-justify font-normal text-sm">
             Rugs are one of the simplest and most effective ways to enhance the
-            aesthetics of any room. Whether you're looking to bring warmth,
+            aesthetics of any room. Whether you&apos;re looking to bring warmth,
             <br />
             <br />
             texture, or a pop of color to your interior, the right rug can

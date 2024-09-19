@@ -73,7 +73,8 @@ const HomeCarpet: React.FC = () => {
         </h1>
         <h1 className="font-normal text-sm text-pretty">
           Add warmth and coziness to your living spaces with our exquisite
-          collection of home carpets. Whether you're looking for something plush
+          collection of home carpets. Whether you&apos;re looking for something
+          plush
           <br />
           for your bedroom or a more durable option for high-traffic areas like
           hallways, our home carpets are designed to suit every part of your

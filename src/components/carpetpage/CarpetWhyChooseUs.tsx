@@ -46,7 +46,7 @@ export const CarpetWhyChooseUs: React.FC = () => {
       <h2 className="text-center text-lg font-normal text-black/70 mb-8">
         Transform your space with our stylish and comfortable carpets, available
         in a variety of colors and textures. <br />
-        Here's why our carpets are the perfect choice for your home:
+        Here&apos;s why our carpets are the perfect choice for your home:
       </h2>
       <List
         itemLayout="vertical"

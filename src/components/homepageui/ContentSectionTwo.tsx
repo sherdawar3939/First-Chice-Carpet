@@ -25,7 +25,7 @@ const ContentSectionTwo: React.FC = () => {
           </h2>
           <p className="text-gray-600 mb-6 text-justify">
             Looking for the best interior design companies in Dubai? Interior
-            design is not just about decoration; it's about improving your
+            design is not just about decoration; it&apos;s about improving your
             lifestyle and enhancing the way you experience your surroundings. A
             well-designed home or office not only looks impressive but also
             functions efficiently, creating a space where you can thrive. At
