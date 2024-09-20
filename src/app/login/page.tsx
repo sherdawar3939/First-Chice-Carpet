@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { Button, Input, Form, Alert, message } from "antd";
+import { useState, useEffect } from "react";
+import { Button, Input, Form, Alert, message, Spin } from "antd";
 import { LockOutlined, MailOutlined } from "@ant-design/icons";
 import Link from "next/link";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { redirect } from "next/navigation";
 
 interface FormValues {
   email: string;
@@ -16,6 +17,19 @@ const Page = () => {
   const [error, setError] = useState("");
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const { data: session, status } = useSession();
+
+  useEffect(() => {
+    if (status === "loading") {
+      setIsLoading(true);
+    } else {
+      setIsLoading(false);
+      if (session) {
+        redirect("/admin/product");
+      }
+    }
+  }, [session, status]);
 
   const onFinish = async (values: FormValues) => {
     setLoading(true);
@@ -42,6 +56,14 @@ const Page = () => {
       setLoading(false);
     }
   };
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <Spin size="large" />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
