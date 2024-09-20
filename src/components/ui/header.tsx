@@ -24,7 +24,7 @@ const Header = ({
   onCollapse: any;
 }) => {
   const { data: session } = useSession();
-  console.log(JSON.stringify(session?.user));
+
   return (
     <AntHeader
       style={{
