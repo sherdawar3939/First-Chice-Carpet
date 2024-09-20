@@ -51,7 +51,7 @@ export const RugsWhyChooseUs: React.FC = () => {
     <Card className="p-4 md:p-8">
       {/* Why Rugs Matter */}
       <div className="flex flex-col justify-center items-center text-center">
-        <h1 className="text-justify text-4xl mb-4 font-medium text-black/90">
+        <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
           {whyRugsMatter.title}
         </h1>
       </div>

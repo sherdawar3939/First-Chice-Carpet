@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Button, Input, Form, Alert } from "antd";
+import { Button, Input, Form, Alert, message } from "antd";
 import { LockOutlined, MailOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
@@ -31,9 +31,11 @@ const Page = () => {
       if (result?.error) {
         setError(result.error);
       } else {
+        message.success("Login is successful");
         router.push("/admin/product");
       }
     } catch (error) {
+      message.error("Try again later");
       console.error("Login error:", error);
       setError("An unexpected error occurred");
     } finally {

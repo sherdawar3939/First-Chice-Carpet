@@ -15,7 +15,7 @@ const page = () => {
     <div>
       <CurtainContentSection />
       <div className="flex flex-col justify-center items-center text-center text-2xl font-bold px-5">
-        <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20 text-justify">
+        <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20 text-center">
           Discover the Best Curtains in Dubai
         </h1>
       </div>

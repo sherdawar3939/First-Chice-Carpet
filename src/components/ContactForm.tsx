@@ -165,7 +165,7 @@ const ContactForm = () => {
           <PhoneOutlined style={{ color: "#faad14", fontSize: "30px" }} />
           <div>
             <h3 className="text-xl font-semibold">Phone Support</h3>
-            <p className="text-black/80 font-normal text-sm text-pretty">
+            <p className="text-black/80 font-normal text-sm text-justify">
               Would you like to discuss your needs over the phone? Submit your
               details, and one of our knowledgeable advisors will reach out to
               you shortly.
@@ -177,7 +177,7 @@ const ContactForm = () => {
           <MailOutlined style={{ color: "#1890ff", fontSize: "30px" }} />
           <div>
             <h3 className="text-xl font-semibold">Email Support</h3>
-            <p className="text-black/80 font-normal text-sm text-pretty">
+            <p className="text-black/80 font-normal text-sm text-justify">
               Prefer email? Reach us at [your email address], and our team will
               respond promptly.
             </p>
@@ -190,7 +190,7 @@ const ContactForm = () => {
           />
           <div>
             <h3 className="text-xl font-semibold">Customer Assistance</h3>
-            <p className="text-black/80 font-normal text-sm text-pretty">
+            <p className="text-black/80 font-normal text-sm text-justify">
               We are committed to resolving any issues you may encounter. Your
               satisfaction is our priority.
             </p>
@@ -201,7 +201,7 @@ const ContactForm = () => {
           <DollarOutlined style={{ color: "#f5222d", fontSize: "30px" }} />
           <div>
             <h3 className="text-xl font-semibold">Ask For a Quote</h3>
-            <p className="text-black/80 font-normal text-sm text-pretty">
+            <p className="text-black/80 font-normal text-sm text-justify">
               Interested in our interior design products? Fill out the form for
               a competitive price quotation, and we will reach out to you.
             </p>

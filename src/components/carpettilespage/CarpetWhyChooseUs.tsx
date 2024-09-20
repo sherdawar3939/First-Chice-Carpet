@@ -41,7 +41,7 @@ export const CarpetWhyChooseUs: React.FC = () => {
   return (
     <Card className="p-4 md:p-8">
       <div className="flex flex-col justify-center items-center text-center">
-        <h1 className="text-justify text-4xl mb-4 font-medium text-black/90">
+        <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
           Why Choose Carpet Tiles in Dubai?
         </h1>
       </div>

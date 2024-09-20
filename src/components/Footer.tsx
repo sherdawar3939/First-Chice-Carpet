@@ -15,8 +15,8 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
         {/* About Company Section */}
         <div>
-          <h3 className="text-xl font-bold mb-4">About Company</h3>
-          <p>
+          <h3 className="text-xl font-bold mb-4 ">About Company</h3>
+          <p className="text-white">
             The leader in UAE’s Fix it services, including Curtains, Blinds and
             Flooring installation and Fixing.
           </p>
@@ -34,10 +34,12 @@ const Footer = () => {
               <span>+971568842551</span>
             </p>
           </a>
-          <p className="flex items-center space-x-2 mt-2">
-            <FiPhone className="text-yellow-400" />
-            <span>+971568842551</span>
-          </p>
+          <a href="tel:+971568842551">
+            <p className="flex items-center space-x-2 mt-2">
+              <FiPhone className="text-yellow-400" />
+              <span>+971568842551</span>
+            </p>
+          </a>
         </div>
 
         {/* Quick Links Section */}
@@ -71,7 +73,10 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="bg-[#FFC100] mt-8 py-4 text-center px-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© Copyright 2024. First Choice General Trading LLC Dubai</p>
+          <p>
+            First Choice General Trading LLC Dubai.
+            <a href="https://www.fiverr.com/sakibsarker0"> © Copyright 2024</a>
+          </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="/" className="text-white hover:text-yellow-400">
               <FaFacebook />

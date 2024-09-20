@@ -40,7 +40,7 @@ export const CurtainWhyChooseUs: React.FC = () => {
 
   return (
     <Card className="p-4 md:p-8">
-      <h1 className="text-justify text-4xl mb-4 font-medium text-black/90">
+      <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
         Get a Stunning Collection of Quality Curtains From Interior Company
         Dubai
       </h1>

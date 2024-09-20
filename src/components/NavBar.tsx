@@ -49,7 +49,7 @@ const NavBar = () => {
       {/* Top Bar */}
       <div className="flex justify-between items-center p-4">
         <div className="flex items-center space-x-4">
-          <a href="tel:0427671930" className="flex items-center space-x-2">
+          <a href="tel:+971568842551" className="flex items-center space-x-2">
             <FiPhone className="text-[#FFC100]" />
             <span>+971568842551</span>
           </a>
