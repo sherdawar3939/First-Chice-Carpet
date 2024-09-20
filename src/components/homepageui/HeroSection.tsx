@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Carousel } from "antd";
+import Link from "next/link";
 
 const HeroSection: React.FC = () => {
   return (
@@ -21,9 +22,11 @@ const HeroSection: React.FC = () => {
                 Discover our premium selection of carpets, perfect for every
                 room. Elevate your home or office with comfort and style.
               </p>
-              <button className="bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 w-60 py-5 text-sm font-medium tracking-widest rounded-md">
-                Explore Carpets
-              </button>
+              <Link href="/carpets">
+                <button className="text-white bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 w-60 py-5 text-sm font-medium tracking-widest rounded-md">
+                  Explore Carpets
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -44,9 +47,11 @@ const HeroSection: React.FC = () => {
                 From motorized curtains to sheer elegance, find the perfect
                 match for your home’s aesthetic
               </p>
-              <button className="bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 py-5 w-60 text-sm font-medium tracking-widest rounded-md">
-                Visit Now
-              </button>
+              <Link href="/curtains">
+                <button className="bg-gradient-to-r text-white from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 py-5 w-60 text-sm font-medium tracking-widest rounded-md">
+                  Visit Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -67,9 +72,11 @@ const HeroSection: React.FC = () => {
                 Upgrade your flooring with our wide range of vinyl, parquet, and
                 LVT options for a modern, durable finish.
               </p>
-              <button className="bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 py-5 w-60 text-sm font-medium tracking-widest rounded-md">
-                View Flooring
-              </button>
+              <Link href="/flooring">
+                <button className="bg-gradient-to-r text-white from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 py-5 w-60 text-sm font-medium tracking-widest rounded-md">
+                  View Flooring
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -10,6 +10,8 @@ import LivingRoomCarpet from "@/components/carpettilespage/LivingRoomCarpet";
 import MosqueCarpet from "@/components/carpettilespage/MosqueCarpet";
 import ResidentialCarpet from "@/components/carpettilespage/ResidentialCarpet";
 import HotelCarpet from "@/components/carpettilespage/HotelCarpet";
+import { CarpetTileStyles } from "@/components/carpettilespage/CarpetTitleStyle";
+import { CarpetDiscountTwo } from "@/components/carpettilespage/CarpetDiscountTwo";
 
 const page = () => {
   return (
@@ -28,6 +30,8 @@ const page = () => {
       <ResidentialCarpet />
       <HotelCarpet />
       <CarpetWhyChooseUs />
+      <CarpetTileStyles />
+      <CarpetDiscountTwo />
       <CarpetDiscount />
     </div>
   );

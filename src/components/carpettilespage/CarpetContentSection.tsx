@@ -34,25 +34,30 @@ const CarpetContentSection: React.FC = () => {
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg text-white">🏢</i>
-            Shop Premium Quality Custom Carpets In Dubai
+            Carpet Tiles for Dubai Marketplace: Stylish, Durable, and Affordable
+            Flooring Solutions
           </h2>
           <p className="text-white mb-6 text-justify font-normal text-sm">
-            At First Choice General Trading LLC, we offer a premium selection of
-            carpets designed to enhance the style, comfort, and ambiance of your
-            space. Our interior design
-            <br />
-            <br />
-            company in Dubai has the perfect carpet solutions tailored to meet
-            your specific needs. Our diverse range of carpets includes
-            everything from luxurious wall-to-wall options to specialized
-            carpets for hotels and mosques.
+            Introduction Carpet tiles are rapidly becoming a top choice for
+            modern homes and commercial spaces in Dubai. With their versatility,
+            <br /> <br />
+            durability, and easy maintenance, carpet tiles offer an ideal
+            solution for flooring that combines style with functionality.
+            Whether you&apos;re looking to upgrade your home or furnish a
+            business space, carpet tiles provide a customizable, high-quality
+            option that can elevate the aesthetic of any room.
           </p>
 
           {/* Buttons */}
           <div className="flex justify-center md:justify-start space-x-4">
-            <button className="bg-[#FFC100] text-white px-4 py-2 rounded-md hover:bg-[#14B1E7] transition">
-              Book Appointment
-            </button>
+            <a
+              href="https://wa.me/971568842551" // Replace with your WhatsApp number
+              target="_blank"
+            >
+              <button className="bg-[#FFC100] text-white px-4 py-2 rounded-md hover:bg-[#14B1E7] transition">
+                Book Appointment
+              </button>
+            </a>
           </div>
         </div>
       </div>

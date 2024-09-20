@@ -10,14 +10,18 @@ export const CarpetDiscount = () => {
             <ShoppingFilled style={{ color: "#fa8c16", fontSize: "40px" }} />
           </div>
           <h1 className="text-black/70 font-bold text-xl text-center py-5 tracking-widest">
-            Avail Amazing prices with Discounted Deals
+            Why Buy Carpet Tiles in Dubai?
           </h1>
         </div>
         <div className="text-center mb-6">
           <h1 className="text-sm font-normal text-black/70">
-            Choose carpets from a wide range of designs, patterns, and textures
-            to suit your unique theme and ambience. Contact us for any
-            information
+            Dubai is home to a wide range of carpet tile suppliers, offering
+            both local and international brands. Shopping for carpet tiles in
+            Dubai means access to premium materials, expert installation
+            services, and competitive prices. Whether you&apos;re looking for
+            high-end, luxurious options or affordable, budget-friendly
+            solutions, Dubai&apos;s carpet tile market has something to suit
+            every need.
           </h1>
         </div>
       </div>

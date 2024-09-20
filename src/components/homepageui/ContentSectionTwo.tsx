@@ -42,9 +42,14 @@ const ContentSectionTwo: React.FC = () => {
 
           {/* Buttons */}
           <div className="flex justify-center md:justify-start space-x-4">
-            <button className="bg-[#14B1E7] text-white px-4 py-2 rounded-md hover:bg-[#FFC100] transition">
-              Book Appointment
-            </button>
+            <a
+              href="https://wa.me/971568842551" // Replace with your WhatsApp number
+              target="_blank"
+            >
+              <button className="bg-[#14B1E7] text-white px-4 py-2 rounded-md hover:bg-[#FFC100] transition">
+                Book Appointment
+              </button>
+            </a>
           </div>
         </div>
       </div>
