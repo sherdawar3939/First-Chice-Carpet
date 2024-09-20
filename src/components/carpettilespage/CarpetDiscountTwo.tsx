@@ -14,7 +14,7 @@ export const CarpetDiscountTwo = () => {
           </h1>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70">
+          <h1 className="text-sm font-normal text-black/70 text-justify px-5">
             Carpet tiles are an eco-friendly flooring option, particularly when
             sourced from manufacturers that use recycled materials. Many brands
             offer tiles made from sustainable fibers, contributing to reducing

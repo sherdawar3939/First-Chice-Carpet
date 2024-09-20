@@ -13,12 +13,13 @@ const page = () => {
   return (
     <div>
       <RugsContentSection />
-      <div className="text-center text-2xl font-bold my-4">
-        <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20">
-          Experience Style and Functionality With
-          <br /> Top-quality Rugs For Luxury Interior Design Dubai
+      <div className="flex flex-col justify-center items-center text-center text-2xl font-bold px-5">
+        <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20 text-justify">
+          Experience Style and Functionality With Top-quality Rugs For Luxury
+          Interior Design Dubai
         </h1>
       </div>
+
       <SisalRugsForNaturalEleganceandDurability />
       <AreaRugstoAnchorYourSpace />
       <RoundRugsWithUniqueDesignElement />

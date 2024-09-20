@@ -43,10 +43,10 @@ export const CarpetWhyChooseUs: React.FC = () => {
       <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
         The Advantages of Our Carpets
       </h1>
-      <h2 className="text-center text-lg font-normal text-black/70 mb-8">
+      <h2 className="text-justify text-lg font-normal text-black/70 mb-8">
         Transform your space with our stylish and comfortable carpets, available
-        in a variety of colors and textures. <br />
-        Here&apos;s why our carpets are the perfect choice for your home:
+        in a variety of colors and textures. Here&apos;s why our carpets are the
+        perfect choice for your home:
       </h2>
       <List
         itemLayout="vertical"
@@ -60,7 +60,7 @@ export const CarpetWhyChooseUs: React.FC = () => {
                 <h1 className="text-black/90 text-xl font-semibold">
                   {item.title}
                 </h1>
-                <h1 className="text-black/70 text-sm font-normal">
+                <h1 className="text-black/70 text-sm font-normal text-justify">
                   {item.description}
                 </h1>
               </div>

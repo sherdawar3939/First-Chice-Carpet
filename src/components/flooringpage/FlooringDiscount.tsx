@@ -14,7 +14,7 @@ export const FlooringDiscount = () => {
           </h1>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70">
+          <h1 className="text-sm font-normal text-black/70 text-justify px-5">
             With our trendy flooring options, you can transform your space with
             our interior design company in Dubai. Contact us today to explore
             our selection and discover how we can help you achieve the perfect

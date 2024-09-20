@@ -40,10 +40,12 @@ export const CarpetWhyChooseUs: React.FC = () => {
 
   return (
     <Card className="p-4 md:p-8">
-      <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
-        Why Choose Carpet Tiles in Dubai?
-      </h1>
-      <h2 className="text-center text-lg font-normal text-black/70 mb-8">
+      <div className="flex flex-col justify-center items-center text-center">
+        <h1 className="text-justify text-4xl mb-4 font-medium text-black/90">
+          Why Choose Carpet Tiles in Dubai?
+        </h1>
+      </div>
+      <h2 className="text-justify text-lg font-normal text-black/70 mb-8">
         Dubai&apos;s dynamic marketplace demands practical and aesthetically
         pleasing flooring solutions that can withstand the city&apos;s unique
         climate and high foot traffic. Carpet tiles meet these requirements with
@@ -60,7 +62,7 @@ export const CarpetWhyChooseUs: React.FC = () => {
                 <h1 className="text-black/90 text-xl font-semibold">
                   {item.title}
                 </h1>
-                <h1 className="text-black/70 text-sm font-normal">
+                <h1 className="text-black/70 text-sm font-normal text-justify">
                   {item.description}
                 </h1>
               </div>
@@ -74,7 +76,7 @@ export const CarpetWhyChooseUs: React.FC = () => {
       <h3 className="text-black/90 text-md mt-4 font-bold">
         1. Commercial Spaces:
       </h3>
-      <p className="text-black/70 text-sm mb-4">
+      <p className="text-black/70 text-sm mb-4 text-justify">
         Carpet tiles are an excellent choice for office spaces, showrooms,
         retail stores, and other commercial areas. Their sound-absorbing
         properties reduce noise, creating a quieter and more productive
@@ -85,7 +87,7 @@ export const CarpetWhyChooseUs: React.FC = () => {
       <h3 className="text-black/90 text-md font-bold">
         2. Residential Spaces:
       </h3>
-      <p className="text-black/70 text-sm">
+      <p className="text-black/70 text-sm text-justify">
         In homes, carpet tiles offer a soft and warm underfoot feel, ideal for
         living rooms, bedrooms, and play areas. Their modular design ensures
         easy replacement of individual tiles, making them family-friendly,

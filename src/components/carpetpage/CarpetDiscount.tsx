@@ -14,7 +14,7 @@ export const CarpetDiscount = () => {
           </h1>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70">
+          <h1 className="text-sm font-normal text-black/70 px-5 text-justify">
             Choose carpets from a wide range of designs, patterns, and textures
             to suit your unique theme and ambience. Contact us for any
             information

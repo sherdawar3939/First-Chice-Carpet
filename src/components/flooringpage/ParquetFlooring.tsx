@@ -67,7 +67,7 @@ export const ParquetFlooring: React.FC = () => {
 
   return (
     <div>
-      <div className="w-screen justify-center text-center items-center pl-20 pr-20">
+      <div className="w-screen justify-center text-center items-center px-5">
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Parquet Flooring
         </h1>

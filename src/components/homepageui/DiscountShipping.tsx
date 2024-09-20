@@ -14,7 +14,7 @@ const DiscountShipping: React.FC = () => {
           </h1>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70">
+          <h1 className="text-sm font-normal text-black/70 text-justify px-5">
             Explore our exclusive range of products and give your home or office
             a fresh, elegant look with First Choice General Trading LLC. Contact
             our interior consultants in Dubai for expert advice and start your

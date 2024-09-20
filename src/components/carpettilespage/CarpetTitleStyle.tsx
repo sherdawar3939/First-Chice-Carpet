@@ -30,10 +30,12 @@ export const CarpetTileStyles: React.FC = () => {
 
   return (
     <Card className="p-4 md:p-8">
-      <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
-        Carpet Tile Styles for Every Taste
-      </h1>
-      <h2 className="text-center text-lg font-normal text-black/70 mb-8">
+      <div className="flex flex-col justify-center items-center text-center">
+        <h1 className="text-justify text-4xl mb-4 font-medium text-black/90">
+          Carpet Tile Styles for Every Taste
+        </h1>
+      </div>
+      <h2 className="text-jusitfy text-lg font-normal text-black/70 mb-8">
         Dubai’s diverse marketplace demands a variety of styles, and carpet
         tiles cater to all design preferences:
       </h2>
@@ -48,7 +50,7 @@ export const CarpetTileStyles: React.FC = () => {
                 <h1 className="text-black/90 text-xl font-semibold">
                   {item.title}
                 </h1>
-                <h1 className="text-black/70 text-sm font-normal">
+                <h1 className="text-black/70 text-sm font-normal text-jusitfy">
                   {item.description}
                 </h1>
               </div>

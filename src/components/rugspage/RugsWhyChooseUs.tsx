@@ -50,19 +50,19 @@ export const RugsWhyChooseUs: React.FC = () => {
   return (
     <Card className="p-4 md:p-8">
       {/* Why Rugs Matter */}
-      <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
-        {whyRugsMatter.title}
-      </h1>
-      <p className="text-center text-md font-normal text-black/70 mb-8">
+      <div className="flex flex-col justify-center items-center text-center">
+        <h1 className="text-justify text-4xl mb-4 font-medium text-black/90">
+          {whyRugsMatter.title}
+        </h1>
+      </div>
+      <p className="text-justify text-md font-normal text-black/70 mb-8">
         Rugs serve a functional purpose while enhancing the overall aesthetic of
-        your home or office. <br />
-        They can anchor furniture arrangements, create focal points, and even
-        influence the acoustics of a room. The right rug <br />
+        your home or office. They can anchor furniture arrangements, create
+        focal points, and even influence the acoustics of a room. The right rug
         can tie together various design elements, providing a sense of harmony
-        and balance to your space. In a city like Dubai, <br /> where style and
-        luxury are key components of interior design, rugs offer an opportunity
-        to express your <br />
-        individuality while maintaining comfort and elegance.
+        and balance to your space. In a city like Dubai, where style and luxury
+        are key components of interior design, rugs offer an opportunity to
+        express your individuality while maintaining comfort and elegance.
       </p>
 
       {/* Tips for Maintaining Rugs */}
@@ -81,7 +81,7 @@ export const RugsWhyChooseUs: React.FC = () => {
                 <h1 className="text-black/90 text-xl font-semibold">
                   {item.title}
                 </h1>
-                <h1 className="text-black/70 text-sm font-normal">
+                <h1 className="text-black/70 text-sm font-normal text-justify">
                   {item.description}
                 </h1>
               </div>

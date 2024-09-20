@@ -14,11 +14,12 @@ const page = () => {
   return (
     <div>
       <CurtainContentSection />
-      <div className="text-center text-2xl font-bold my-4">
-        <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20">
+      <div className="flex flex-col justify-center items-center text-center text-2xl font-bold px-5">
+        <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20 text-justify">
           Discover the Best Curtains in Dubai
         </h1>
       </div>
+
       <LivingRoomCurtain />
       <SheerCurtain />
       <MasterRoomCurtain />

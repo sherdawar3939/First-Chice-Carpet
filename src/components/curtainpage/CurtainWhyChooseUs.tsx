@@ -40,9 +40,9 @@ export const CurtainWhyChooseUs: React.FC = () => {
 
   return (
     <Card className="p-4 md:p-8">
-      <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
-        Get a Stunning Collection of Quality Curtains
-        <br /> From Interior Company Dubai
+      <h1 className="text-justify text-4xl mb-4 font-medium text-black/90">
+        Get a Stunning Collection of Quality Curtains From Interior Company
+        Dubai
       </h1>
 
       <List
@@ -57,7 +57,7 @@ export const CurtainWhyChooseUs: React.FC = () => {
                 <h1 className="text-black/90 text-xl font-semibold">
                   {item.title}
                 </h1>
-                <h1 className="text-black/70 text-sm font-normal">
+                <h1 className="text-black/70 text-sm font-normal text-justify">
                   {item.description}
                 </h1>
               </div>

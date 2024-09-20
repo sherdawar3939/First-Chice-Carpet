@@ -14,7 +14,7 @@ export const CarpetDiscount = () => {
           </h1>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70">
+          <h1 className="text-sm font-normal text-black/70 text-justify px-5">
             Dubai is home to a wide range of carpet tile suppliers, offering
             both local and international brands. Shopping for carpet tiles in
             Dubai means access to premium materials, expert installation

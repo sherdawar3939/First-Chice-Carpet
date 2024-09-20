@@ -71,7 +71,7 @@ const WhyChooseUs: React.FC = () => {
                 <h1 className="text-black/90 text-xl font-semibold">
                   {item.title}
                 </h1>
-                <h1 className="text-black/70 text-sm font-normal">
+                <h1 className="text-black/70 text-sm font-normal text-justify">
                   {item.description}
                 </h1>
               </div>

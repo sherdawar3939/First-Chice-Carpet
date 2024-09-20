@@ -92,14 +92,16 @@ const Page: React.FC = () => {
                 className="relative group cursor-pointer"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start">
                   <h3 className="text-lg font-bold text-black/90 truncate">
