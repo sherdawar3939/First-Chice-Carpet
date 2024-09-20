@@ -7,7 +7,7 @@ const WhatsappIcon = () => {
       href="https://wa.me/971568842551" // Replace with your WhatsApp number
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-0"
+      className="fixed bottom-4 right-0 z-50"
     >
       <FaWhatsappSquare className="text-green-500 text-6xl" />
     </a>

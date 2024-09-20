@@ -141,7 +141,7 @@ const CategorySection: React.FC = () => {
         {elements.map((element) => (
           <Link href={element.link} key={element.name} className="no-underline">
             <div className="flex flex-col items-center justify-center">
-              <div className="text-[45px] flex items-center justify-center p-3 bg-gray-200/30 rounded-full text-[#14B1E7] hover:text-[#FFC100] transition">
+              <div className="text-[50px] flex items-center justify-center p-5 bg-gray-200/30 rounded-full text-[#14B1E7] hover:text-[#FFC100] transition">
                 {element.icon}
               </div>
               <div
