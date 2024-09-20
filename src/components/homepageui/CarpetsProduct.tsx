@@ -71,13 +71,11 @@ const CarpetsProduct: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Carpets
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Our diverse range of carpets brings warmth and comfort to any room.
           Choose from a variety of textures, colors, and patterns to create the
-          <br />
           perfect foundation for your home or office interiors. Our carpets are
           designed to add a touch of luxury while also offering durability for
-          <br />
           everyday use. All our products come from the best interior designers
           in Dubai.
         </h1>
@@ -96,14 +94,16 @@ const CarpetsProduct: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

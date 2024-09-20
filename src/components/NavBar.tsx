@@ -37,6 +37,7 @@ const NavBar = () => {
         className={`hover:text-[#FFC100] ${
           isActive ? "text-[#FFC100] font-normal" : ""
         }`}
+        onClick={() => setIsMobileMenuOpen(false)}
       >
         {children}
       </Link>
@@ -53,7 +54,7 @@ const NavBar = () => {
             <span>+971568842551</span>
           </a>
           <a
-            href="https://wa.me/971568842551" // Replace with your WhatsApp number
+            href="https://wa.me/971568842551"
             target="_blank"
             className="flex items-center space-x-2"
           >
@@ -65,34 +66,34 @@ const NavBar = () => {
 
       {/* Navigation Bar */}
       <nav className="bg-white text-[#14B1E7] shadow-md">
-        <div className="flex justify-between items-center p-4">
-          {/* Mobile Menu Toggle (Hamburger Icon on the left) */}
-          <div className="block lg:hidden">
-            <button onClick={toggleMobileMenu} aria-label="Toggle menu">
-              {isMobileMenuOpen ? (
-                <FiX className="text-2xl text-[#14B1E7]" />
-              ) : (
-                <FiMenu className="text-2xl text-[#14B1E7]" />
-              )}
-            </button>
-          </div>
+        <div className="flex flex-col lg:flex-row justify-between items-center p-4">
+          <div className="w-full lg:w-auto flex justify-between items-center">
+            {/* Mobile Menu Toggle (Hamburger Icon on the left) */}
+            <div className="block lg:hidden">
+              <button onClick={toggleMobileMenu} aria-label="Toggle menu">
+                {isMobileMenuOpen ? (
+                  <FiX className="text-2xl text-[#14B1E7]" />
+                ) : (
+                  <FiMenu className="text-2xl text-[#14B1E7]" />
+                )}
+              </button>
+            </div>
 
-          {/* Logo (Centered on Mobile) */}
-          <div className="flex-grow flex justify-center lg:justify-start">
-            <Image
-              width={100}
-              height={100}
-              src="/logo.jpg"
-              alt="Avante Homes"
-              className="h-12"
-            />
-          </div>
+            {/* Logo (Centered on Mobile) */}
+            <div className="flex-grow flex justify-center lg:justify-start">
+              <Link href="/">
+                <Image
+                  width={100}
+                  height={100}
+                  src="/logo.png"
+                  alt="logo"
+                  className="h-12"
+                />
+              </Link>
+            </div>
 
-          {/* Search Icon on the Right (Visible in Mobile) */}
-          <div className="block lg:hidden">
-            <button onClick={handleSearch} aria-label="Search">
-              <FiSearch className="text-2xl text-[#14B1E7]" />
-            </button>
+            {/* Placeholder div to balance the layout */}
+            <div className="block lg:hidden w-8"></div>
           </div>
 
           {/* Desktop Navigation Links */}
@@ -106,10 +107,10 @@ const NavBar = () => {
             <NavLink href="/contactus">Contact us</NavLink>
           </div>
 
-          {/* Search Bar (Desktop Only) */}
+          {/* Search Bar (Mobile and Desktop) */}
           <form
             onSubmit={handleSearch}
-            className="hidden lg:flex items-center space-x-2 border rounded-lg bg-gray-100 px-3 py-2"
+            className="w-full lg:w-auto mt-4 lg:mt-0 flex items-center space-x-2 border rounded-lg bg-gray-100 px-3 py-2"
           >
             <input
               type="text"
@@ -135,22 +136,6 @@ const NavBar = () => {
               <NavLink href="/flooring">Flooring</NavLink>
               <NavLink href="/carpettiles">Carpet tiles</NavLink>
               <NavLink href="/contactus">Contact us</NavLink>
-              {/* Mobile Search Bar */}
-              <form
-                onSubmit={handleSearch}
-                className="flex items-center space-x-2 border rounded-lg bg-gray-100 px-3 py-2 mt-4"
-              >
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="bg-transparent outline-none text-sm text-[#14B1E7] flex-grow"
-                />
-                <button type="submit" aria-label="Search">
-                  <FiSearch className="text-[#14B1E7]" />
-                </button>
-              </form>
             </div>
           </div>
         )}

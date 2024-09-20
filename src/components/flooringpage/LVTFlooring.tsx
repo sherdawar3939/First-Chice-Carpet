@@ -37,7 +37,7 @@ export const LVTFlooring: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=LVT-flooring");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -72,14 +72,14 @@ export const LVTFlooring: React.FC = () => {
           LVT Flooring
         </h1>
 
-        <p className="text-left font-normal text-sm text-black/90">
+        <p className="text-justify font-normal text-sm text-black/90">
           Luxury Vinyl Tile (LVT) flooring is a modern and functional solution
           that combines the best aspects of vinyl with the aesthetic appeal of
           natural materials. LVT is designed to mimic the look of real wood or
           stone, providing a high-end appearance at a more affordable price
         </p>
 
-        <ul className="text-left text-sm font-normal text-black/90 list-disc list-inside mt-4">
+        <ul className="text-justify text-sm font-normal text-black/90 list-disc list-inside mt-4">
           <li>
             <span className="text-sm font-bold">High-Definition Visuals:</span>
             LVT flooring uses advanced printing technology to replicate the
@@ -108,7 +108,7 @@ export const LVTFlooring: React.FC = () => {
           </li>
         </ul>
 
-        <p className="text-left text-sm font-normal text-black/90 mt-4">
+        <p className="text-justify text-sm font-normal text-black/90 mt-4">
           Our range of LVT flooring options includes various styles, from sleek
           and modern to rustic and textured, catering to diverse design
           preferences. Whether you’re revamping a contemporary office or a cozy
@@ -129,14 +129,16 @@ export const LVTFlooring: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

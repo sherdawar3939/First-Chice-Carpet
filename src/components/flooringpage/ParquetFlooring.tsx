@@ -37,7 +37,7 @@ export const ParquetFlooring: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Parquet-flooring");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -72,14 +72,14 @@ export const ParquetFlooring: React.FC = () => {
           Parquet Flooring
         </h1>
 
-        <p className="text-left font-normal text-sm text-black/90">
+        <p className="text-justify font-normal text-sm text-black/90">
           Parquet flooring exudes timeless elegance and sophistication, making
           it a favored choice for those seeking a touch of class in their
           interiors. This traditional flooring option is characterized by its
           geometric patterns, often crafted from hardwood.
         </p>
 
-        <ul className="text-left text-sm font-normal text-black/90 list-disc list-inside mt-4">
+        <ul className="text-justify text-sm font-normal text-black/90 list-disc list-inside mt-4">
           <li>
             <span className="text-sm font-bold">Timeless Appeal:</span> Parquet
             flooring’s classic patterns, such as herringbone and chevron, add a
@@ -104,7 +104,7 @@ export const ParquetFlooring: React.FC = () => {
           </li>
         </ul>
 
-        <p className="text-left text-sm font-normal text-black/90 mt-4">
+        <p className="text-justify text-sm font-normal text-black/90 mt-4">
           Our selection of parquet flooring includes a range of wood types and
           finishes, allowing you to achieve the desired look and feel for your
           interior. Our parquet flooring options are the perfect foundation for
@@ -125,14 +125,16 @@ export const ParquetFlooring: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

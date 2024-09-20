@@ -37,7 +37,7 @@ export const RomanBlinds: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Roman-blinds");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,16 +71,13 @@ export const RomanBlinds: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Roman Blinds
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Roman blinds offer a sophisticated and tailored look for any room.
           Unlike traditional curtains, they fold up neatly when raised, creating
-          <br />
           a clean and uncluttered appearance. Our Roman blinds are available in
           a wide range of fabrics, colors, and patterns, making them a versatile
-          <br />
           option for both modern and traditional interiors. Whether you want to
           add a splash of color or keep things neutral and elegant, Roman blinds
-          <br />
           provide a stylish and functional window treatment that suits any
           design scheme.
         </h1>
@@ -99,14 +96,16 @@ export const RomanBlinds: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

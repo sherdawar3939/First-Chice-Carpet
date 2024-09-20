@@ -71,10 +71,9 @@ const RugsProduct: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Rugs
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Add character and charm to your living space with our collection of
           rugs. From contemporary designs to traditional styles, our rugs are
-          <br />
           carefully selected to complement a wide range of interior themes. They
           serve as the perfect accent to tie a room together.
         </h1>
@@ -93,14 +92,16 @@ const RugsProduct: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

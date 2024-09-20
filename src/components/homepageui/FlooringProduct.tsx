@@ -71,13 +71,11 @@ const FlooringProduct: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Flooring
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Hiring professional interior design companies in Dubai? We offer a
           wide variety of flooring solutions, including vinyl flooring, parquet
-          <br />
           flooring, LVT flooring and more. Our flooring options are durable,
           easy to maintain, and available in a range of finishes and styles to
-          <br />
           suit any interior design preference.
         </h1>
       </div>
@@ -95,14 +93,16 @@ const FlooringProduct: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

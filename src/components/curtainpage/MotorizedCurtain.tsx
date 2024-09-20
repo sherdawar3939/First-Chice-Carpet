@@ -37,7 +37,7 @@ export const MotorizedCurtain: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Motorized-curtain");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,16 +71,13 @@ export const MotorizedCurtain: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Motorized Curtain
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Experience the ultimate convenience and modern style with our
           motorized curtains. These automated curtains can be opened or closed
-          <br />
           with the touch of a button, offering a perfect blend of functionality
           and elegance. Motorized curtains are ideal for large windows, high
-          <br />
           ceilings, or hard-to-reach spaces. They provide a sleek, contemporary
           look while allowing you to control light and privacy effortlessly.
-          <br />
           With smart home integration options, our motorized curtains are
           perfect for those seeking innovative and stylish solutions
         </h1>
@@ -99,14 +96,16 @@ export const MotorizedCurtain: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

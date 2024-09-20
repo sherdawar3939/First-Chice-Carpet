@@ -37,7 +37,7 @@ export const RoundRugsWithUniqueDesignElement: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Round-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,19 +71,15 @@ export const RoundRugsWithUniqueDesignElement: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Round Rugs With Unique Design Element
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           For those looking to break away from traditional rectangular rugs,
           round rugs offer a unique and creative solution. They add visual
-          <br />
           interest, soften sharp corners, and can make a room feel more inviting
           and relaxed. Round rugs are especially effective in creating focal
-          <br />
           points in living rooms, entryways, or dining areas. Our collection of
           round rugs comes in a range of colors, materials, and textures,
-          <br />
           allowing you to choose one that perfectly complements your existing
           interior design. Whether placed under a round dining table or in the
-          <br />
           center of a seating area, these rugs add an unexpected yet elegant
           touch to any space.
         </h1>
@@ -102,14 +98,16 @@ export const RoundRugsWithUniqueDesignElement: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

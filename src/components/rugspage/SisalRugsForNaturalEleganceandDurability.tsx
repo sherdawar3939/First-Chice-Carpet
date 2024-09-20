@@ -37,7 +37,7 @@ export const SisalRugsForNaturalEleganceandDurability: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Sisal-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,16 +71,13 @@ export const SisalRugsForNaturalEleganceandDurability: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Sisal Rugs For Natural Elegance and Durability
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Sisal rugs bring a natural and understated beauty to any room. Made
           from the fibers of the agave plant, these rugs are eco-friendly,
-          <br />
           incredibly durable, and well-suited for high-traffic areas. With their
           neutral tones and rugged texture, sisal rugs seamlessly blend with a
-          <br />
           variety of interior styles, from modern minimalist to rustic chic.
           Sisal rugs not only offer durability but also add a warm, earthy tone
-          <br />
           to your space. Their coarse texture provides a grounding effect,
           making them perfect for your home.
         </h1>
@@ -99,14 +96,16 @@ export const SisalRugsForNaturalEleganceandDurability: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

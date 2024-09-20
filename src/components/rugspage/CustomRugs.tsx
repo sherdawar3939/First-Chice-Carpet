@@ -37,7 +37,7 @@ export const CustomRugs: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Custom-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,13 +71,11 @@ export const CustomRugs: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Custom Rugs
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Every room has its own personality, and sometimes standard rug sizes
           and shapes just won’t do. That’s where custom rugs come in. If you’re
-          <br />
           looking for something truly unique, we offer bespoke rug solutions
           that allow you to create a rug that fits perfectly in your space. From
-          <br />
           custom sizes and shapes to personalized designs, our team at First
           Choice General Trading LLC is here to bring your vision to life.
         </h1>
@@ -96,14 +94,16 @@ export const CustomRugs: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

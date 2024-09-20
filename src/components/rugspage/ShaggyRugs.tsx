@@ -37,7 +37,7 @@ export const ShaggyRugs: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Shaggy-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,19 +71,15 @@ export const ShaggyRugs: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Shaggy Rugs
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           For a plush, luxurious feel, shaggy rugs are the ultimate option.
           Their deep pile and soft texture create a cozy and comfortable
-          <br />
           environment, perfect for bedrooms, living rooms, or lounging areas.
           Shaggy rugs not only provide warmth but also add an element of
-          <br />
           texture, making them a perfect addition to modern and contemporary
           interiors. In our Dubai interior design company, we offer shaggy rugs
-          <br />
           in a variety of colors and thicknesses. Whether you prefer neutral
           tones for a sophisticated look or vibrant hues for a playful vibe,
-          <br />
           shaggy rugs offer unmatched comfort and style.
         </h1>
       </div>
@@ -101,14 +97,16 @@ export const ShaggyRugs: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

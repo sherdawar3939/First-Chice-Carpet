@@ -37,7 +37,7 @@ export const SheerCurtain: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Sheer-curtain");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,13 +71,11 @@ export const SheerCurtain: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Sheer Curtain
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           Sheer curtains add a touch of elegance and softness to any room. They
           allow natural light to filter through while maintaining a sense of
-          <br />
           privacy. Our sheer curtains are ideal for creating a light, breezy
           environment in living rooms, bedrooms, or dining areas. Available in
-          <br />
           various styles and colors, they can be layered with heavier drapes for
           a more customized look or used alone to create a minimalist, modern
           appeal
@@ -97,14 +95,16 @@ export const SheerCurtain: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

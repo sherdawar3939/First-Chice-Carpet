@@ -4,7 +4,7 @@ import { Button, Carousel } from "antd";
 const HeroSection: React.FC = () => {
   return (
     <div className="hero-slider relative overflow-hidden">
-      <Carousel>
+      <Carousel autoplay speed={5} swipeToSlide>
         <div className="relative w-full h-[60vh] md:h-screen flex items-center justify-center">
           <img
             src="/images/carpet.jpg"
@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
                 Discover our premium selection of carpets, perfect for every
                 room. Elevate your home or office with comfort and style.
               </p>
-              <button className="bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 py-5 text-sm font-medium tracking-widest rounded-md">
+              <button className="bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 w-60 py-5 text-sm font-medium tracking-widest rounded-md">
                 Explore Carpets
               </button>
             </div>
@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
                 From motorized curtains to sheer elegance, find the perfect
                 match for your home’s aesthetic
               </p>
-              <button className="hover:bg-[#14B1E7] bg-[#FFC100] border-none px-4 md:px-16 py-5 text-sm font-medium tracking-widest rounded-md">
+              <button className="bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 py-5 w-60 text-sm font-medium tracking-widest rounded-md">
                 Visit Now
               </button>
             </div>
@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
                 Upgrade your flooring with our wide range of vinyl, parquet, and
                 LVT options for a modern, durable finish.
               </p>
-              <button className="bg-[#14B1E7] hover:bg-[#FFC100] border-none px-4 md:px-16 py-5 text-sm font-medium tracking-widest rounded-md">
+              <button className="bg-gradient-to-r from-[#14B1E7] to-[#FFC100] hover:bg-gradient-to-r hover:bg-[#FFC100] hover:to-[#14B1E7] border-none px-4 md:px-10 py-5 w-60 text-sm font-medium tracking-widest rounded-md">
                 View Flooring
               </button>
             </div>

@@ -71,10 +71,7 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="bg-[#FFC100] mt-8 py-4 text-center px-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>
-            © Copyright 2024. All rights reserved. FIXIT DESIGN CARPET AND
-            CURTAINS TRADING L.L.C. Designed by Dee Designers
-          </p>
+          <p>© Copyright 2024. First Choice General Trading LLC Dubai</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="/" className="text-white hover:text-yellow-400">
               <FaFacebook />

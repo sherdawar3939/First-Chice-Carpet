@@ -32,108 +32,108 @@ const elements: StylingElement[] = [
   {
     name: "Wall to Wall Carpet",
     icon: <ShopOutlined />, // Store/shop related
-    link: "/carpets",
+    link: "/categories/wall-to-wall-carpet",
   },
   {
     name: "Office Carpet",
     icon: <ApartmentOutlined />, // Office building
-    link: "/carpets",
+    link: "/categories/office-carpet",
   },
   {
     name: "Home Carpet",
     icon: <HomeOutlined />, // Home icon
-    link: "/carpets",
+    link: "/categories/home-carpet",
   },
   {
     name: "Living Room Carpet",
     icon: <AppstoreOutlined />, // Generic room
-    link: "/carpets",
+    link: "/categories/living-room-carpet",
   },
   {
     name: "Mosque Carpet",
     icon: <BankOutlined />, // Mosque/building icon
-    link: "/carpets",
+    link: "/categories/mosque-carpet",
   },
   {
     name: "Residential Carpet",
     icon: <TeamOutlined />, // Residential/home community
-    link: "/carpets",
+    link: "/categories/residential-carpet",
   },
   {
     name: "Hotel Carpet",
     icon: <EnvironmentOutlined />, // Hotel/travel icon
-    link: "/carpets",
+    link: "/categories/hotel-carpet",
   },
   {
     name: "Living Room Curtain",
     icon: <BulbOutlined />, // Curtain related, light bulb
-    link: "/curtains",
+    link: "/categories/living-room-curtain",
   },
   {
     name: "Sheer Curtain",
     icon: <CloudOutlined />, // Cloudy, light theme
-    link: "/curtains",
+    link: "/categories/sheer-curtain",
   },
   {
     name: "Master Room Curtain",
     icon: <ControlOutlined />, // Control/power icon for master
-    link: "/curtains",
+    link: "/categories/master-room-curtain",
   },
   {
     name: "Motorized Curtain",
     icon: <OrderedListOutlined />, // Motorized list/control
-    link: "/curtains",
+    link: "/categories/motorized-curtain",
   },
   {
     name: "Roman Blinds",
     icon: <BorderOutlined />, // Roman style/fixed structure
-    link: "/curtains",
+    link: "/categories/roman-blinds",
   },
   {
     name: "Sisal Rugs",
     icon: <CodeSandboxOutlined />, // Natural/fiber like
-    link: "/rugs",
+    link: "/categories/sisal-rugs",
   },
   {
     name: "Area Rugs",
     icon: <HeatMapOutlined />, // Cover area/rug
-    link: "/rugs",
+    link: "/categories/area-rugs",
   },
   {
     name: "Round Rugs",
     icon: <BorderOuterOutlined />, // Round border icon
-    link: "/rugs",
+    link: "/categories/round-rugs",
   },
   {
     name: "Shaggy Rugs",
     icon: <HighlightOutlined />, // Highlighted texture
-    link: "/rugs",
+    link: "/categories/shaggy-rugs",
   },
   {
     name: "Custom Rugs",
     icon: <PictureOutlined />, // Picture/graphic design
-    link: "/rugs",
+    link: "/categories/custom-rugs",
   },
   {
     name: "Vinyl Flooring",
     icon: <BarcodeOutlined />, // Vinyl records/smooth lines
-    link: "/flooring",
+    link: "/categories/vinyl-flooring",
   },
   {
     name: "Parquet Flooring",
     icon: <LayoutOutlined />, // Floor layout/pattern
-    link: "/flooring",
+    link: "/categories/parquet-flooring",
   },
   {
     name: "LVT Flooring",
     icon: <BorderOuterOutlined />, // Tiled/flooring icon
-    link: "/flooring",
+    link: "/categories/lvt-flooring",
   },
 ];
 
-const CategorySection: React.FC = () => {
+const CarpetCategorySection: React.FC = () => {
   return (
-    <div className="py-8">
+    <div className="py-8 px-10">
       <div
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-0"
         style={{ gridAutoRows: "auto", rowGap: "100px" }} // Row gap 100px
@@ -157,4 +157,4 @@ const CategorySection: React.FC = () => {
   );
 };
 
-export default CategorySection;
+export default CarpetCategorySection;

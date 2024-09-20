@@ -37,7 +37,7 @@ export const VinylFlooring: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Vinyl-flooring");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -72,14 +72,14 @@ export const VinylFlooring: React.FC = () => {
           Vinyl Flooring
         </h1>
 
-        <p className="text-left font-normal text-sm text-black/90">
+        <p className="text-justify font-normal text-sm text-black/90">
           Vinyl flooring is an increasingly popular choice for homeowners and
           businesses alike in Dubai. Its versatility, durability, and wide range
           of styles make it an excellent option for various interior design
           needs.
         </p>
 
-        <ul className="text-left text-sm font-normal text-black/90 list-disc list-inside mt-4">
+        <ul className="text-justify text-sm font-normal text-black/90 list-disc list-inside mt-4">
           <li>
             <span className="text-sm font-bold">Variety of Designs:</span> Vinyl
             flooring comes in numerous designs, including realistic wood and
@@ -105,7 +105,7 @@ export const VinylFlooring: React.FC = () => {
           </li>
         </ul>
 
-        <p className="text-left text-sm font-normal text-black/90 mt-4">
+        <p className="text-justify text-sm font-normal text-black/90 mt-4">
           We offer a diverse selection of vinyl flooring options to suit various
           styles and budgets. We have a range of designs to suit every taste,
           whether you prefer contemporary patterns or classic designs.
@@ -125,14 +125,16 @@ export const VinylFlooring: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">

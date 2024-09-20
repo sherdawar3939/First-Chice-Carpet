@@ -37,7 +37,7 @@ export const LivingRoomCurtain: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=carpets");
+        const res = await fetch("/api/product?category=Living-room-curtain");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -71,17 +71,14 @@ export const LivingRoomCurtain: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Living Room Curtain
         </h1>
-        <h1 className="font-normal text-sm text-pretty">
+        <h1 className="font-normal text-sm text-justify">
           The living room is often the centerpiece of any home, and the right
           curtains can completely transform its ambiance. Our living room
-          <br />
           curtains are available in a variety of fabrics, colors, and patterns,
           allowing you to find the perfect match for your décor. Whether you’re
-          <br />
           aiming for a light, airy feel or a more formal and dramatic look, we
-          provide curtains that enhance
-          <br /> the atmosphere of your living space while offering privacy and
-          light control
+          provide curtains that enhance the atmosphere of your living space
+          while offering privacy and light control
         </h1>
       </div>
 
@@ -98,14 +95,16 @@ export const LivingRoomCurtain: React.FC = () => {
                 className="relative group cursor-pointer bg-gray-200/20 rounded-br-md rounded-bl-md"
                 onClick={() => showModal(index)}
               >
-                <Image
-                  src={product.imageurl}
-                  alt={product.title}
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover"
-                  style={{ width: "300px", height: "200px" }}
-                />
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={product.imageurl}
+                    alt={product.title}
+                    width={300}
+                    height={200}
+                    className="rounded-md object-cover"
+                    style={{ width: "300px", height: "200px" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-md"></div>
                 <div className="mt-2 text-start px-1 py-1 ">
                   <h3 className="text-lg font-bold text-black/90 truncate">
