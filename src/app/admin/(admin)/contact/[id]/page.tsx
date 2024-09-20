@@ -61,7 +61,7 @@ const Page: React.FC = () => {
 
   const onFinish = async (values: any) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/contact/${id}`, {
+      const response = await fetch(`/api/contact/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

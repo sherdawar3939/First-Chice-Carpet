@@ -1,34 +1,21 @@
 import { NextResponse } from "next/server";
-import { NextRequest } from "next/server";
+import type { NextRequest } from "next/server";
 import { getToken } from "next-auth/jwt";
 
 export async function middleware(request: NextRequest) {
-  const path = request.nextUrl.pathname;
   const token = await getToken({
     req: request,
-    secret: "JGoJn04tbtsVlN6RmuRYJDHunFDas2k75uplcLlAyGU=",
+    secret: `${process.env.NEXTAUTH_SECRET}`,
   });
 
-  // Only run this middleware for admin routes
-  // if (path.startsWith("/admin")) {
-  //   try {
-  //     // If there's no token, redirect to login
-  //     if (!token) {
-  //       console.log("No token found, redirecting to login");
-  //       return NextResponse.redirect(new URL("/login", request.url));
-  //     }
-
-  //     console.log("User authenticated, proceeding to admin route");
-  //   } catch (error) {
-  //     console.error("Error in middleware:", error);
-  //     return NextResponse.redirect(new URL("/login", request.url));
-  //   }
-  // }
-
-  // For all other routes, or if authenticated for admin routes, continue normally
-  return NextResponse.next();
+  if (!token) {
+    return new NextResponse(
+      JSON.stringify({ success: false, message: "authentication failed" }),
+      { status: 401, headers: { "content-type": "application/json" } }
+    );
+  }
 }
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: ["/api/products/:path*"],
 };

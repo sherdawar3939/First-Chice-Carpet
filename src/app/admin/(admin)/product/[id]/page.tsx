@@ -106,7 +106,7 @@ const Page: React.FC = () => {
         ...values,
         imageurl: imageUrl,
       };
-      const response = await fetch(`http://localhost:3000/api/product/${id}`, {
+      const response = await fetch(`/api/product/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

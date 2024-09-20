@@ -49,7 +49,7 @@ const Page: React.FC = () => {
 
   const deleteItem = async (_id: string) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/product/${_id}`, {
+      const response = await fetch(`/api/product/${_id}`, {
         method: "DELETE",
       });
 
