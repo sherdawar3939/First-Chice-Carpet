@@ -6,6 +6,7 @@ import { ObjectId } from "mongodb";
 import bcrypt from "bcrypt";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  debug: true,
   adapter: MongoDBAdapter(clientPromise),
   providers: [
     CredentialsProvider({
@@ -31,7 +32,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         }
 
         const isPasswordValid = await bcrypt.compare(
-          credentials.password as any,
+          credentials.password as string,
           user.password
         );
 
@@ -56,8 +57,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
     session: async ({ session, token }) => {
       if (token) {
-        session.user.id = token.id as any;
-        session.user.email = token.email as any;
+        session.user.id = token.id as string;
+        session.user.email = token.email as string;
       }
       return session;
     },

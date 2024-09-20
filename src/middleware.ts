@@ -10,20 +10,20 @@ export async function middleware(request: NextRequest) {
   });
 
   // Only run this middleware for admin routes
-  if (path.startsWith("/admin")) {
-    try {
-      // If there's no token, redirect to login
-      if (!token) {
-        console.log("No token found, redirecting to login");
-        return NextResponse.redirect(new URL("/login", request.url));
-      }
+  // if (path.startsWith("/admin")) {
+  //   try {
+  //     // If there's no token, redirect to login
+  //     if (!token) {
+  //       console.log("No token found, redirecting to login");
+  //       return NextResponse.redirect(new URL("/login", request.url));
+  //     }
 
-      console.log("User authenticated, proceeding to admin route");
-    } catch (error) {
-      console.error("Error in middleware:", error);
-      return NextResponse.redirect(new URL("/login", request.url));
-    }
-  }
+  //     console.log("User authenticated, proceeding to admin route");
+  //   } catch (error) {
+  //     console.error("Error in middleware:", error);
+  //     return NextResponse.redirect(new URL("/login", request.url));
+  //   }
+  // }
 
   // For all other routes, or if authenticated for admin routes, continue normally
   return NextResponse.next();
