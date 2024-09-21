@@ -31,7 +31,7 @@ const page = () => {
       <ContentSection />
       <div className="text-center text-2xl font-bold my-4">
         <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20">
-          Our Exclusive Product Collection For Interior Design Dubai Engr Sher
+          Our Exclusive Product Collection For Interior Design Dubai
         </h1>
         <CarpetsProduct />
         <CurtainProduct />
