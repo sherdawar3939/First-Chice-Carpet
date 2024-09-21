@@ -11,6 +11,7 @@ import ContentSectionTwo from "@/components/homepageui/ContentSectionTwo";
 import CurtainProduct from "@/components/homepageui/CurtainProduc";
 import RugsProduct from "@/components/homepageui/RugsProduct";
 import FlooringProduct from "@/components/homepageui/FlooringProduct";
+import CarpetsTilesProduct from "@/components/homepageui/CarpetsTilesProduct";
 
 const page = () => {
   return (
@@ -37,6 +38,7 @@ const page = () => {
         <CurtainProduct />
         <RugsProduct />
         <FlooringProduct />
+        <CarpetsTilesProduct />
       </div>
       <WhyChooseUs />
       <DiscountShipping />

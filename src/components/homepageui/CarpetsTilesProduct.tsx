@@ -26,7 +26,7 @@ const companyDetails = {
   address: "333 bin Thani plaza Naif Deira Dubai",
 };
 
-const RugsProduct: React.FC = () => {
+const CarpetsTilesProduct: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -37,7 +37,7 @@ const RugsProduct: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=rugs");
+        const res = await fetch("/api/product?category=carpettiles");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -69,13 +69,16 @@ const RugsProduct: React.FC = () => {
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
-          Rugs
+          Carpet Tiles
         </h1>
         <h1 className="font-normal text-sm text-justify">
-          Add character and charm to your living space with our collection of
-          rugs. From contemporary designs to traditional styles, our rugs are
-          carefully selected to complement a wide range of interior themes. They
-          serve as the perfect accent to tie a room together.
+          Introduction Carpet tiles are rapidly becoming a top choice for modern
+          homes and commercial spaces in Dubai. With their versatility,
+          durability, and easy maintenance, carpet tiles offer an ideal solution
+          for flooring that combines style with functionality. Whether
+          you&apos;re looking to upgrade your home or furnish a business space,
+          carpet tiles provide a customizable, high-quality option that can
+          elevate the aesthetic of any room
         </h1>
       </div>
 
@@ -197,4 +200,4 @@ const RugsProduct: React.FC = () => {
   );
 };
 
-export default RugsProduct;
+export default CarpetsTilesProduct;
