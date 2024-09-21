@@ -20,6 +20,12 @@ import {
   BarcodeOutlined,
   LayoutOutlined,
   BorderOuterOutlined,
+  BuildOutlined,
+  ScissorOutlined,
+  GoldOutlined,
+  UserSwitchOutlined,
+  DropboxOutlined,
+  DeploymentUnitOutlined,
 } from "@ant-design/icons"; // Import more relevant icons
 
 interface StylingElement {
@@ -31,103 +37,128 @@ interface StylingElement {
 const elements: StylingElement[] = [
   {
     name: "Wall to Wall Carpet",
-    icon: <ShopOutlined />, // Store/shop related
+    icon: <ShopOutlined />,
     link: "/carpets",
   },
   {
     name: "Office Carpet",
-    icon: <ApartmentOutlined />, // Office building
+    icon: <ApartmentOutlined />,
     link: "/carpets",
   },
   {
     name: "Home Carpet",
-    icon: <HomeOutlined />, // Home icon
+    icon: <HomeOutlined />,
     link: "/carpets",
   },
   {
     name: "Living Room Carpet",
-    icon: <AppstoreOutlined />, // Generic room
+    icon: <AppstoreOutlined />,
     link: "/carpets",
   },
   {
     name: "Mosque Carpet",
-    icon: <BankOutlined />, // Mosque/building icon
+    icon: <BankOutlined />,
     link: "/carpets",
   },
   {
     name: "Residential Carpet",
-    icon: <TeamOutlined />, // Residential/home community
+    icon: <TeamOutlined />,
     link: "/carpets",
   },
   {
     name: "Hotel Carpet",
-    icon: <EnvironmentOutlined />, // Hotel/travel icon
+    icon: <EnvironmentOutlined />,
     link: "/carpets",
   },
   {
     name: "Living Room Curtain",
-    icon: <BulbOutlined />, // Curtain related, light bulb
+    icon: <BulbOutlined />,
     link: "/curtains",
   },
   {
     name: "Sheer Curtain",
-    icon: <CloudOutlined />, // Cloudy, light theme
+    icon: <CloudOutlined />,
     link: "/curtains",
   },
   {
     name: "Master Room Curtain",
-    icon: <ControlOutlined />, // Control/power icon for master
+    icon: <ControlOutlined />,
     link: "/curtains",
   },
   {
     name: "Motorized Curtain",
-    icon: <OrderedListOutlined />, // Motorized list/control
+    icon: <OrderedListOutlined />,
     link: "/curtains",
   },
   {
     name: "Roman Blinds",
-    icon: <BorderOutlined />, // Roman style/fixed structure
+    icon: <BorderOutlined />,
     link: "/curtains",
   },
   {
     name: "Sisal Rugs",
-    icon: <CodeSandboxOutlined />, // Natural/fiber like
+    icon: <CodeSandboxOutlined />,
     link: "/rugs",
   },
   {
     name: "Area Rugs",
-    icon: <HeatMapOutlined />, // Cover area/rug
+    icon: <HeatMapOutlined />,
     link: "/rugs",
   },
   {
     name: "Round Rugs",
-    icon: <BorderOuterOutlined />, // Round border icon
+    icon: <BorderOuterOutlined />,
     link: "/rugs",
   },
   {
     name: "Shaggy Rugs",
-    icon: <HighlightOutlined />, // Highlighted texture
+    icon: <HighlightOutlined />,
     link: "/rugs",
   },
   {
     name: "Custom Rugs",
-    icon: <PictureOutlined />, // Picture/graphic design
+    icon: <PictureOutlined />,
     link: "/rugs",
   },
   {
     name: "Vinyl Flooring",
-    icon: <BarcodeOutlined />, // Vinyl records/smooth lines
+    icon: <BarcodeOutlined />,
     link: "/flooring",
   },
   {
     name: "Parquet Flooring",
-    icon: <LayoutOutlined />, // Floor layout/pattern
+    icon: <LayoutOutlined />,
     link: "/flooring",
   },
   {
     name: "LVT Flooring",
-    icon: <BorderOuterOutlined />, // Tiled/flooring icon
+    icon: <BorderOuterOutlined />,
     link: "/flooring",
+  },
+  {
+    name: "Interlocking Carpet Tiles",
+    icon: <BuildOutlined />, // Represents interlocking/building
+    link: "/carpettiles",
+  },
+  {
+    name: "Peel & Stick Carpet Tiles",
+    icon: <ScissorOutlined />, // Scissors for peel & stick
+    link: "/carpettiles",
+  },
+  {
+    name: "Commercial Carpet Tiles",
+    icon: <GoldOutlined />, // Gold/business icon for commercial
+    link: "/carpettiles",
+  },
+  {
+    name: "Residential Carpet Tiles",
+    icon: <UserSwitchOutlined />, // Residential/community switch
+    link: "/carpettiles",
+  },
+  {
+    name: "Basement Carpet Tiles",
+    icon: <DeploymentUnitOutlined />, // Storage/basement reference
+    link: "/carpettiles",
   },
 ];
 
