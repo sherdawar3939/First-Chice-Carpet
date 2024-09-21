@@ -70,6 +70,15 @@ const Page: React.FC = () => {
       "Custom-rugs",
     ],
     flooring: ["Vinyl-flooring", "Parquet-flooring", "LVT-flooring"],
+    carpettiles: [
+      "Wall-to-Wall-carpet",
+      "Office-carpet",
+      "Home-carpet",
+      "Living-room-carpet",
+      "Mosque-carpet",
+      "Residential-carpet",
+      "Hotel-carpet",
+    ],
   };
 
   const onCategoryChange = (value: string) => {
@@ -155,6 +164,7 @@ const Page: React.FC = () => {
             <Option value="curtains">Curtains</Option>
             <Option value="rugs">Rugs</Option>
             <Option value="flooring">Flooring</Option>
+            <Option value="carpettiles">Carpet Tiles</Option>
           </Select>
         </Form.Item>
         <Form.Item
