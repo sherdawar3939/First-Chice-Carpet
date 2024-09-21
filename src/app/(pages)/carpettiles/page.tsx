@@ -28,8 +28,7 @@ const page = () => {
       <HomeCarpet />
       <LivingRoomCarpet />
       <MosqueCarpet />
-      <ResidentialCarpet />
-      <HotelCarpet />
+
       <CarpetWhyChooseUs />
       <CarpetTileStyles />
       <CarpetDiscountTwo />

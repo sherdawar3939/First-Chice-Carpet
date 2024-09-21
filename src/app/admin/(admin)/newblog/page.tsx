@@ -71,13 +71,11 @@ const Page: React.FC = () => {
     ],
     flooring: ["Vinyl-flooring", "Parquet-flooring", "LVT-flooring"],
     carpettiles: [
-      "Wall-to-Wall-carpet",
-      "Office-carpet",
-      "Home-carpet",
-      "Living-room-carpet",
-      "Mosque-carpet",
-      "Residential-carpet",
-      "Hotel-carpet",
+      "Interlocking-carpet-tiles",
+      "Peel&Stick-carpet-tiles",
+      "Commercial-carpet-tiles",
+      "Residential-carpet-tiles",
+      "Basement-carpet-tiles",
     ],
   };
 

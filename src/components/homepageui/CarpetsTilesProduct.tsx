@@ -75,10 +75,10 @@ const CarpetsTilesProduct: React.FC = () => {
           Introduction Carpet tiles are rapidly becoming a top choice for modern
           homes and commercial spaces in Dubai. With their versatility,
           durability, and easy maintenance, carpet tiles offer an ideal solution
-          for flooring that combines style with functionality. Whether you're
-          looking to upgrade your home or furnish a business space, carpet tiles
-          provide a customizable, high-quality option that can elevate the
-          aesthetic of any room
+          for flooring that combines style with functionality. Whether
+          you&apos;re looking to upgrade your home or furnish a business space,
+          carpet tiles provide a customizable, high-quality option that can
+          elevate the aesthetic of any room
         </h1>
       </div>
 
