@@ -38,7 +38,7 @@ const LivingRoomCarpet: React.FC = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "/api/product?category=Residential-carpet-tiles"
+          "/api/product?subcategory=Residential-carpet-tiles"
         );
         const data = await res.json();
         setProducts(data);

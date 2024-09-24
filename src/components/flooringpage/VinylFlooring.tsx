@@ -37,7 +37,7 @@ export const VinylFlooring: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Vinyl-flooring");
+        const res = await fetch("/api/product?subcategory=Vinyl-flooring");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

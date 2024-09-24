@@ -37,7 +37,7 @@ export const SheerCurtain: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Sheer-curtain");
+        const res = await fetch("/api/product?subcategory=Sheer-curtain");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

@@ -38,7 +38,7 @@ const OfficeCarpet: React.FC = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "/api/product?category=Peel&Stick-carpet-tiles"
+          "/api/product?subcategory=Peel&Stick-carpet-tiles"
         );
         const data = await res.json();
         setProducts(data);

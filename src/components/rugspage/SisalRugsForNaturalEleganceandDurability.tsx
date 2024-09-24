@@ -37,7 +37,7 @@ export const SisalRugsForNaturalEleganceandDurability: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Sisal-rugs");
+        const res = await fetch("/api/product?subcategory=Sisal-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

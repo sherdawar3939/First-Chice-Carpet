@@ -38,7 +38,7 @@ const HomeCarpet: React.FC = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "/api/product?category=Commercial-carpet-tiles"
+          "/api/product?subcategory=Commercial-carpet-tiles"
         );
         const data = await res.json();
         setProducts(data);

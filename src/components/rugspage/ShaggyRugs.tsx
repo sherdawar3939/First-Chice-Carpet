@@ -37,7 +37,7 @@ export const ShaggyRugs: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Shaggy-rugs");
+        const res = await fetch("/api/product?subcategory=Shaggy-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

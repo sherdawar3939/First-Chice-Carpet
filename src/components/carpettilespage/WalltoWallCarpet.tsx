@@ -38,7 +38,7 @@ const WalltoWallCarpet: React.FC = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "/api/product?category=Interlocking-carpet-tiles"
+          "/api/product?subcategory=Interlocking-carpet-tiles"
         );
         const data = await res.json();
         setProducts(data);
