@@ -60,7 +60,7 @@ const Page: React.FC = () => {
       "Sheer-curtain",
       "Master-room-curtain",
       "Motorized-curtain",
-      "Roman-blinds",
+      "Roller-blinds",
     ],
     rugs: [
       "Sisal-rugs",

@@ -20,7 +20,7 @@ interface Product {
 }
 
 const companyDetails = {
-  name: "Fixit Design",
+  name: "First Choice Carpet",
   phone: "+971568842551",
   whatsapp: "+971568842551",
   address: "333 bin Thani plaza Naif Deira Dubai",
@@ -69,17 +69,17 @@ export const RomanBlinds: React.FC = () => {
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
-          Roman Blinds
+          Roller Blinds
         </h1>
         <h1 className="font-normal text-sm text-justify">
-          Roman blinds offer a sophisticated and tailored look for any room.
+          Roller blinds offer a sophisticated and tailored look for any room.
           Unlike traditional curtains, they fold up neatly when raised, creating
-          a clean and uncluttered appearance. Our Roman blinds are available in
+          a clean and uncluttered appearance. Our Roller blinds are available in
           a wide range of fabrics, colors, and patterns, making them a versatile
           option for both modern and traditional interiors. Whether you want to
-          add a splash of color or keep things neutral and elegant, Roman blinds
-          provide a stylish and functional window treatment that suits any
-          design scheme.
+          add a splash of color or keep things neutral and elegant, Roller
+          blinds provide a stylish and functional window treatment that suits
+          any design scheme.
         </h1>
       </div>
 
