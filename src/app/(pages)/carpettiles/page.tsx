@@ -24,7 +24,7 @@ const page = () => {
       </div>
 
       <WalltoWallCarpet />
-      <OfficeCarpet />
+      <HotelCarpet />
       <HomeCarpet />
       <LivingRoomCarpet />
       <MosqueCarpet />
