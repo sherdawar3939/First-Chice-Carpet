@@ -37,7 +37,9 @@ const MosqueCarpet: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Basement-carpet-tiles");
+        const res = await fetch(
+          "/api/product?subcategory=Basement-carpet-tiles"
+        );
         const data = await res.json();
         setProducts(data);
         setLoading(false);

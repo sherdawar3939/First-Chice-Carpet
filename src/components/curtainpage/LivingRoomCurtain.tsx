@@ -37,7 +37,7 @@ export const LivingRoomCurtain: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Living-room-curtain");
+        const res = await fetch("/api/product?subcategory=Living-room-curtain");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

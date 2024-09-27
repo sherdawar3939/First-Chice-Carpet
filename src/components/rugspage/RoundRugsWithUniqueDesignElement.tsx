@@ -37,7 +37,7 @@ export const RoundRugsWithUniqueDesignElement: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Round-rugs");
+        const res = await fetch("/api/product?subcategory=Round-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

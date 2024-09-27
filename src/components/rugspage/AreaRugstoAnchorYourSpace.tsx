@@ -37,7 +37,7 @@ export const AreaRugstoAnchorYourSpace: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Area-rugs");
+        const res = await fetch("/api/product?subcategory=Area-rugs");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

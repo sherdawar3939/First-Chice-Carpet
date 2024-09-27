@@ -37,7 +37,7 @@ const HotelCarpet: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Hotel-carpet");
+        const res = await fetch("/api/product?subcategory=Hotel-carpet");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

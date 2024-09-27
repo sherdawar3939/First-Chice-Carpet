@@ -37,7 +37,7 @@ export const MasterRoomCurtain: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Master-room-curtain");
+        const res = await fetch("/api/product?subcategory=Master-room-curtain");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

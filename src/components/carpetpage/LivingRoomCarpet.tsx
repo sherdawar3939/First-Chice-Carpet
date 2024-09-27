@@ -37,7 +37,7 @@ const LivingRoomCarpet: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Living-room-carpet");
+        const res = await fetch("/api/product?subcategory=Living-room-carpet");
         const data = await res.json();
         setProducts(data);
         setLoading(false);

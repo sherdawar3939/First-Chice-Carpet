@@ -37,7 +37,7 @@ export const RomanBlinds: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?category=Roman-blinds");
+        const res = await fetch("/api/product?subcategory=Roman-blinds");
         const data = await res.json();
         setProducts(data);
         setLoading(false);
