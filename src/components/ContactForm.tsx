@@ -141,12 +141,12 @@ const ContactForm = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
               <PhoneOutlined className="text-2xl text-black" />
-              <span className="text-lg font-semibold">+971568842551</span>
+              <span className="text-lg font-semibold">+971555243724</span>
             </div>
             <a href="https://wa.me/971568842551" target="_blank">
               <div className="flex items-center space-x-4 mt-4">
                 <FaWhatsapp className="text-2xl text-green-400" />
-                <span className="text-lg font-semibold">+971568842551</span>
+                <span className="text-lg font-semibold">+971555243724</span>
               </div>
             </a>
 

@@ -21,8 +21,8 @@ interface Product {
 
 const companyDetails = {
   name: "First Choice Carpet",
-  phone: "+971568842551",
-  whatsapp: "+971568842551",
+  phone: "+971555243724",
+  whatsapp: "+971555243724",
   address: "333 bin Thani plaza Naif Deira Dubai",
 };
 
