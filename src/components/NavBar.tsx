@@ -51,15 +51,15 @@ const NavBar = () => {
         <div className="flex items-center space-x-4">
           <a href="tel:+971568842551" className="flex items-center space-x-2">
             <FiPhone className="text-[#FFC100]" />
-            <span>+971568842551</span>
+            <span>+971555243724</span>
           </a>
           <a
-            href="https://wa.me/971568842551"
+            href="https://wa.me/971555243724"
             target="_blank"
             className="flex items-center space-x-2"
           >
             <FaWhatsapp className="text-green-400" />
-            <span>+971568842551</span>
+            <span>+971555243724</span>
           </a>
         </div>
       </div>

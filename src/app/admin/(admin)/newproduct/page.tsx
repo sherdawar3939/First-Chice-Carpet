@@ -72,7 +72,7 @@ const Page: React.FC = () => {
     flooring: ["Vinyl-flooring", "Parquet-flooring", "LVT-flooring"],
     carpettiles: [
       "Interlocking-carpet-tiles",
-      "Peel&Stick-carpet-tiles",
+      "PeelandStick-carpet-tiles",
       "Commercial-carpet-tiles",
       "Residential-carpet-tiles",
       "Basement-carpet-tiles",

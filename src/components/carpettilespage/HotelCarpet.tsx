@@ -21,8 +21,8 @@ interface Product {
 
 const companyDetails = {
   name: "Fixit Design",
-  phone: "+971568842551",
-  whatsapp: "+971568842551",
+  phone: "+971555243724",
+  whatsapp: "+971555243724",
   address: "333 bin Thani plaza Naif Deira Dubai",
 };
 
@@ -37,7 +37,9 @@ const HotelCarpet: React.FC = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch("/api/product?subcategory=Hotel-carpet");
+        const res = await fetch(
+          "/api/product?subcategory=PeelandStick-carpet-tiles"
+        );
         const data = await res.json();
         setProducts(data);
         setLoading(false);
@@ -69,14 +71,15 @@ const HotelCarpet: React.FC = () => {
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
         <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
-          Hotel Carpet
+          Peel & Stick Carpet Tiles
         </h1>
         <h1 className="font-normal text-sm text-justify">
-          First impressions matter, and our hotel carpets are designed to leave
-          a lasting one. Perfect for lobbies, hallways, guest rooms, and event
-          spaces, our hotel carpets combine durability with luxury. These
-          dedicated carpets for hotels are built to withstand high foot traffic
-          while maintaining their appearance over time.
+          Create a professional and inviting atmosphere in your office with our
+          range of office carpets. Designed to withstand heavy foot traffic
+          while maintaining their quality, our office carpets provide a perfect
+          balance of functionality and aesthetics. They offer noise reduction,
+          improved insulation, and a polished look that is ideal for corporate
+          environments.
         </h1>
       </div>
 

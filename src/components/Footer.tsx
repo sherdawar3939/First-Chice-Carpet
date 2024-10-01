@@ -26,18 +26,18 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Connect with Us</h3>
           <a
-            href="https://wa.me/971568842551" // Replace with your WhatsApp number
+            href="https://wa.me/971555243724" // Replace with your WhatsApp number
             target="_blank"
           >
             <p className="flex items-center space-x-2">
               <FaWhatsapp className="text-green-400" />
-              <span>+971568842551</span>
+              <span>+971555243724</span>
             </p>
           </a>
           <a href="tel:+971568842551">
             <p className="flex items-center space-x-2 mt-2">
               <FiPhone className="text-yellow-400" />
-              <span>+971568842551</span>
+              <span>+971555243724</span>
             </p>
           </a>
         </div>
