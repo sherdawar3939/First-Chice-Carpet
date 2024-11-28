@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { SessionProvider } from "next-auth/react";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,22 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <!-- Google tag (gtag.js) --> */}
+      <GoogleTagManager gtmId="G-2R4EVV4KDM" />
       <head>
         {/* google search console code */}
         <meta
           name="google-site-verification"
           content="5Sq62wmFfr_NoTOytLUYU0f1Dk0xsamV7gOfW_7jH7k"
         />
-        {/* <!-- Google tag (gtag.js) --> */}
-        
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2R4EVV4KDM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2R4EVV4KDM');
-</script>
       </head>
       <body className={inter.className}>
         <AntdRegistry>
