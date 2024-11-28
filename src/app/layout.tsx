@@ -24,6 +24,16 @@ export default function RootLayout({
           name="google-site-verification"
           content="5Sq62wmFfr_NoTOytLUYU0f1Dk0xsamV7gOfW_7jH7k"
         />
+        {/* <!-- Google tag (gtag.js) --> */}
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2R4EVV4KDM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2R4EVV4KDM');
+</script>
       </head>
       <body className={inter.className}>
         <AntdRegistry>
