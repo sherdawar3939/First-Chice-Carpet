@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <!-- Google tag (gtag.js) --> */}
-      <GoogleTagManager gtmId="G-2R4EVV4KDM" />
+      <GoogleTagManager gtmId="GTM-MVBT6XK4" />
       <body className={inter.className}>
         <AntdRegistry>
           <SessionProvider>{children}</SessionProvider>
