@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { SessionProvider } from "next-auth/react";
-import { GoogleTagManager } from "@next/third-parties/google";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <!-- Google tag (gtag.js) --> */}
-      <GoogleTagManager gtmId="G-2R4EVV4KDM" />
       <body className={inter.className}>
         <AntdRegistry>
           <SessionProvider>{children}</SessionProvider>
