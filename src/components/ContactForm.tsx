@@ -153,7 +153,7 @@ const ContactForm = () => {
             <div className="flex items-center space-x-4">
               <HomeOutlined className="text-2xl text-black/90" />
               <span className="text-lg font-semibold">
-                333 bin Thani plaza Naif Deira Dubai
+              Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE
               </span>
             </div>
           </div>

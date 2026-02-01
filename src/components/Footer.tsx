@@ -66,7 +66,7 @@ const Footer = () => {
 
         <div>
           <h3 className="text-xl font-bold mb-4">Our Address</h3>
-          <p>333 bin Thani plaza Naif Deira Dubai</p>
+          <p>Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE</p>
         </div>
       </div>
 
