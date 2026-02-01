@@ -40,6 +40,12 @@ const Footer = () => {
               <span>+971555243724</span>
             </p>
           </a>
+          <a href="mailto:info@flooringmaster.ae">
+            <p className="flex items-center space-x-2 mt-2">
+              <FiMail className="text-blue-400" />
+              <span>info@flooringmaster.ae</span>
+            </p>
+          </a>
         </div>
 
         {/* Quick Links Section */}
