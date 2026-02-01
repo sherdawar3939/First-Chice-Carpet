@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="bg-[#FFC100] mt-8 py-4 text-center px-4">
+      <div className="bg-[#FFC100] mt-8 py-4 text-center">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
           <p>
             First Choice General Trading LLC Dubai.
