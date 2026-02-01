@@ -48,7 +48,7 @@ const NavBar = () => {
     <header className="bg-[#14B1E7] text-white sticky top-0 z-50">
       {/* Top Bar */}
       <div className="flex flex-wrap justify-between items-center p-4 gap-2">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-between md:justify-start md:space-x-4 w-full md:w-auto">
           <a href="tel:+971555243724" className="flex items-center space-x-2">
             <FiPhone className="text-[#FFC100]" />
             <span className="text-sm md:text-base">+971555243724</span>
