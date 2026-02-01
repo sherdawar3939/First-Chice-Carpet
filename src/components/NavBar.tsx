@@ -62,6 +62,15 @@ const NavBar = () => {
             <span>+971555243724</span>
           </a>
         </div>
+        <div className="flex items-center space-x-2">
+          <a
+            href="mailto:info@firschoicecarpet.ae"
+            className="flex items-center space-x-2"
+          >
+            <FiMail className="text-yellow-400" />
+            <span>info@firschoicecarpet.ae</span>
+          </a>
+        </div>
       </div>
 
       {/* Navigation Bar */}
