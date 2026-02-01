@@ -23,7 +23,7 @@ const companyDetails = {
   name: "Fixit Design",
   phone: "+971555243724",
   whatsapp: "+971555243724",
-  address: "333 bin Thani plaza Naif Deira Dubai",
+  address: "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
 };
 
 export const LivingRoomCurtain: React.FC = () => {
