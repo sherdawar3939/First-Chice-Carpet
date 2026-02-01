@@ -83,8 +83,8 @@ const NavBar = () => {
             <div className="flex-grow flex justify-center lg:justify-start">
               <Link href="/">
                 <Image
-                  width={100}
-                  height={200}
+                  width={80}
+                  height={250}
                   src="/logo.png"
                   alt="logo"
                   className="h-16"
