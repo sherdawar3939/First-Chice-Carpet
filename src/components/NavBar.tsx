@@ -84,7 +84,7 @@ const NavBar = () => {
               <Link href="/">
                 <Image
                   width={100}
-                  height={250}
+                  height={200}
                   src="/logo.png"
                   alt="logo"
                   className="h-16"
