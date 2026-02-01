@@ -42,8 +42,8 @@ const Footer = () => {
           </a>
           <a href="mailto:info@flooringmaster.ae">
             <p className="flex items-center space-x-2 mt-2">
-              <FiMail className="text-blue-400" />
-              <span>info@flooringmaster.ae</span>
+              <FiMail className="text-yellow-400" />
+              <span>info@firschoicecarpet.ae</span>
             </p>
           </a>
         </div>
