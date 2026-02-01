@@ -47,11 +47,11 @@ const NavBar = () => {
   return (
     <header className="bg-[#14B1E7] text-white sticky top-0 z-50">
       {/* Top Bar */}
-      <div className="flex justify-between items-center p-4">
+      <div className="flex flex-wrap justify-between items-center p-4 gap-2">
         <div className="flex items-center space-x-4">
           <a href="tel:+971555243724" className="flex items-center space-x-2">
             <FiPhone className="text-[#FFC100]" />
-            <span>+971555243724</span>
+            <span className="text-sm md:text-base">+971555243724</span>
           </a>
           <a
             href="https://wa.me/971555243724"
@@ -59,16 +59,18 @@ const NavBar = () => {
             className="flex items-center space-x-2"
           >
             <FaWhatsapp className="text-green-400" />
-            <span>+971555243724</span>
+            <span className="text-sm md:text-base">+971555243724</span>
           </a>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 w-full md:w-auto">
           <a
             href="mailto:info@firschoicecarpet.ae"
             className="flex items-center space-x-2"
           >
             <FiMail className="text-yellow-400" />
-            <span>info@firschoicecarpet.ae</span>
+            <span className="text-sm md:text-base">
+              info@firschoicecarpet.ae
+            </span>
           </a>
         </div>
       </div>
