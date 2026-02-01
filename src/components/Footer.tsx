@@ -34,7 +34,7 @@ const Footer = () => {
               <span>+971555243724</span>
             </p>
           </a>
-          <a href="tel:+971568842551">
+          <a href="tel:+971555243724">
             <p className="flex items-center space-x-2 mt-2">
               <FiPhone className="text-yellow-400" />
               <span>+971555243724</span>
@@ -42,7 +42,7 @@ const Footer = () => {
           </a>
           <a href="mailto:info@flooringmaster.ae">
             <p className="flex items-center space-x-2 mt-2">
-              <FiMail className="text-[#fa8c16]" />
+              <FiMail className="text-yellow-400" />
               <span>info@firschoicecarpet.ae</span>
             </p>
           </a>
