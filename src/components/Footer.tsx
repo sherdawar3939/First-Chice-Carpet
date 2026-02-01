@@ -42,7 +42,7 @@ const Footer = () => {
           </a>
           <a href="mailto:info@flooringmaster.ae">
             <p className="flex items-center space-x-2 mt-2">
-              <FiMail className="text-yellow-400" />
+              <FiMail className="text-[#fa8c16]" />
               <span>info@firschoicecarpet.ae</span>
             </p>
           </a>
