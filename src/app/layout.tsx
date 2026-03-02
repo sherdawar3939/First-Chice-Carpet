@@ -10,9 +10,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "First Choice General Trading LLC  Dubai",
   description: "Home Interior Design",
-  verification: {
-    google: "tzGhhrkOka3QpWhp7_omdhnoqbYoHmgCU4cKvEjX1FY",
-  },
 };
 
 export default function RootLayout({
@@ -22,6 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="tzGhhrkOka3QpWhp7_omdhnoqbYoHmgCU4cKvEjX1FY"
+        />
+      </head>
       {/* <!-- Google tag (gtag.js) --> */}
       <body className={inter.className}>
         {/* google analytics score */}
