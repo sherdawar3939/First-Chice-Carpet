@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState, useRef } from "react";
 import { Modal, Carousel, Spin } from "antd";
 import Image from "next/image";
@@ -23,7 +24,8 @@ const companyDetails = {
   name: "Fixit Design",
   phone: "+971555243724",
   whatsapp: "+971555243724",
-  address: "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
+  address:
+    "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
 };
 
 const WalltoWallCarpet: React.FC = () => {
@@ -38,7 +40,7 @@ const WalltoWallCarpet: React.FC = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "/api/product?subcategory=Interlocking-carpet-tiles"
+          "/api/product?subcategory=Interlocking-carpet-tiles",
         );
         const data = await res.json();
         setProducts(data);

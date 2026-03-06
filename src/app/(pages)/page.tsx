@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import CategorySection from "@/components/homepageui/CategorySection";
 import HeroSection from "@/components/homepageui/HeroSection";
@@ -12,6 +11,10 @@ import CurtainProduct from "@/components/homepageui/CurtainProduc";
 import RugsProduct from "@/components/homepageui/RugsProduct";
 import FlooringProduct from "@/components/homepageui/FlooringProduct";
 import CarpetsTilesProduct from "@/components/homepageui/CarpetsTilesProduct";
+import { Metadata } from "next";
+import { SEO } from "../seo";
+
+export const metadata: Metadata = SEO.home;
 
 const page = () => {
   return (

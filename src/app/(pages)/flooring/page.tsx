@@ -1,11 +1,14 @@
-"use client";
+import { SEO } from "@/app/seo";
 import FlooringContentSection from "@/components/flooringpage/FlooringContentSection";
 import { FlooringDiscount } from "@/components/flooringpage/FlooringDiscount";
 import { FlooringWhyChooseUs } from "@/components/flooringpage/FlooringWhyChooseUs";
 import { LVTFlooring } from "@/components/flooringpage/LVTFlooring";
 import { ParquetFlooring } from "@/components/flooringpage/ParquetFlooring";
 import { VinylFlooring } from "@/components/flooringpage/VinylFlooring";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = SEO.flooring;
 
 const page = () => {
   return (

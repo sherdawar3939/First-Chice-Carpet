@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { ShoppingFilled, BgColorsOutlined } from "@ant-design/icons";
 

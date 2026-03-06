@@ -1,4 +1,4 @@
-"use client";
+import { SEO } from "@/app/seo";
 import { CurtainCategorySection } from "@/components/curtainpage/CurtainCategorySection";
 import { CurtainContentSection } from "@/components/curtainpage/CurtainContentSection";
 import { CurtainDiscount } from "@/components/curtainpage/CurtainDiscount";
@@ -8,7 +8,10 @@ import { MasterRoomCurtain } from "@/components/curtainpage/MasterRoomCurtain";
 import { MotorizedCurtain } from "@/components/curtainpage/MotorizedCurtain";
 import { RomanBlinds } from "@/components/curtainpage/RomanBlinds";
 import { SheerCurtain } from "@/components/curtainpage/SheerCurtain";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = SEO.curtains;
 
 const page = () => {
   return (

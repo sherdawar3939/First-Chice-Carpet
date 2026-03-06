@@ -1,4 +1,4 @@
-"use client";
+import { SEO } from "@/app/seo";
 import { AreaRugstoAnchorYourSpace } from "@/components/rugspage/AreaRugstoAnchorYourSpace";
 import { CustomRugs } from "@/components/rugspage/CustomRugs";
 import { RoundRugsWithUniqueDesignElement } from "@/components/rugspage/RoundRugsWithUniqueDesignElement";
@@ -7,7 +7,10 @@ import { RugsDiscount } from "@/components/rugspage/RugsDiscount";
 import { RugsWhyChooseUs } from "@/components/rugspage/RugsWhyChooseUs";
 import { ShaggyRugs } from "@/components/rugspage/ShaggyRugs";
 import { SisalRugsForNaturalEleganceandDurability } from "@/components/rugspage/SisalRugsForNaturalEleganceandDurability";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = SEO.rugs;
 
 const page = () => {
   return (

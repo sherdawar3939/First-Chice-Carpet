@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Input, Button, message } from "antd";
 import {
@@ -53,7 +54,7 @@ const ContactForm = () => {
 
   // Handle input changes
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -153,7 +154,8 @@ const ContactForm = () => {
             <div className="flex items-center space-x-4">
               <HomeOutlined className="text-2xl text-black/90" />
               <span className="text-lg font-semibold">
-              Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE
+                Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al
+                Buteen Deira Dubai UAE
               </span>
             </div>
           </div>

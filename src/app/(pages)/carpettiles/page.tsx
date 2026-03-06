@@ -1,4 +1,3 @@
-"use client";
 import OfficeCarpet from "@/components/carpettilespage/OfficeCarpet";
 import CarpetCategorySection from "@/components/carpettilespage/CarpetCategorySection";
 import CarpetContentSection from "@/components/carpettilespage/CarpetContentSection";
@@ -12,6 +11,10 @@ import ResidentialCarpet from "@/components/carpettilespage/ResidentialCarpet";
 import HotelCarpet from "@/components/carpettilespage/HotelCarpet";
 import { CarpetTileStyles } from "@/components/carpettilespage/CarpetTitleStyle";
 import { CarpetDiscountTwo } from "@/components/carpettilespage/CarpetDiscountTwo";
+import { SEO } from "@/app/seo";
+import { Metadata } from "next";
+
+export const metadata: Metadata = SEO.carpettiles;
 
 const page = () => {
   return (

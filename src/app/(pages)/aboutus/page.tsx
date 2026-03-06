@@ -6,6 +6,10 @@ import {
   RocketOutlined,
   EyeOutlined,
 } from "@ant-design/icons";
+import { Metadata } from "next";
+import { SEO } from "@/app/seo";
+
+export const metadata: Metadata = SEO.about;
 
 const AboutUsPage = () => {
   return (

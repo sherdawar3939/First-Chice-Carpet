@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState, useRef } from "react";
 import { Modal, Carousel, Spin } from "antd";
 import Image from "next/image";
