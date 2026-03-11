@@ -10,17 +10,17 @@ const DiscountShipping: React.FC = () => {
           <div className="text-[#14B1E7] text-4xl">
             <ShoppingFilled style={{ color: "#fa8c16", fontSize: "40px" }} />
           </div>
-          <h1 className="text-black/70 font-bold text-xl text-center py-5 tracking-widest">
+          <h2 className="text-black/70 font-bold text-xl text-center py-5 tracking-widest">
             Start Shopping with Maximum Discounts
-          </h1>
+          </h2>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70 text-justify px-5">
+          <h3 className="text-sm font-normal text-black/70 text-justify px-5">
             Explore our exclusive range of products and give your home or office
             a fresh, elegant look with First Choice General Trading LLC. Contact
             our interior consultants in Dubai for expert advice and start your
             journey to creating stunning interiors.
-          </h1>
+          </h3>
         </div>
       </div>
     </div>

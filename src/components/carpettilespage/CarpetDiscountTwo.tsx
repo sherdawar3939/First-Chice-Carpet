@@ -10,19 +10,19 @@ export const CarpetDiscountTwo = () => {
           <div className="text-[#14B1E7] text-4xl">
             <BgColorsOutlined style={{ color: "#fa8c16", fontSize: "40px" }} />
           </div>
-          <h1 className="text-black/70 font-bold text-xl text-center py-5 tracking-widest">
+          <h2 className="text-black/70 font-bold text-xl text-center py-5 tracking-widest">
             Sustainability and Environmental Impact
-          </h1>
+          </h2>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70 text-justify px-5">
+          <h3 className="text-sm font-normal text-black/70 text-justify px-5">
             Carpet tiles are an eco-friendly flooring option, particularly when
             sourced from manufacturers that use recycled materials. Many brands
             offer tiles made from sustainable fibers, contributing to reducing
             waste. Additionally, the modular design of carpet tiles results in
             less wastage during installation compared to traditional wall-towall
             carpeting.
-          </h1>
+          </h3>
         </div>
       </div>
     </div>

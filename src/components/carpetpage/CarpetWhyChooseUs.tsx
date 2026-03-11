@@ -41,14 +41,14 @@ export const CarpetWhyChooseUs: React.FC = () => {
 
   return (
     <Card className="p-4 md:p-8">
-      <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
+      <h2 className="text-center text-4xl mb-4 font-medium text-black/90">
         The Advantages of Our Carpets
-      </h1>
-      <h2 className="text-justify text-lg font-normal text-black/70 mb-8">
+      </h2>
+      <h3 className="text-justify text-lg font-normal text-black/70 mb-8">
         Transform your space with our stylish and comfortable carpets, available
         in a variety of colors and textures. Here&apos;s why our carpets are the
         perfect choice for your home:
-      </h2>
+      </h3>
       <List
         itemLayout="vertical"
         dataSource={features}
@@ -58,12 +58,12 @@ export const CarpetWhyChooseUs: React.FC = () => {
               {/* Render dynamic icon here */}
               {item.icon}
               <div>
-                <h1 className="text-black/90 text-xl font-semibold">
+                <h3 className="text-black/90 text-xl font-semibold">
                   {item.title}
-                </h1>
-                <h1 className="text-black/70 text-sm font-normal text-justify">
+                </h3>
+                <h4 className="text-black/70 text-sm font-normal text-justify">
                   {item.description}
-                </h1>
+                </h4>
               </div>
             </div>
           </List.Item>

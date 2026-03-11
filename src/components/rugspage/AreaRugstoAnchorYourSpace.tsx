@@ -70,10 +70,10 @@ export const AreaRugstoAnchorYourSpace: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Area Rugs to Anchor Your Space
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Area rugs are versatile and ideal for adding depth and character to
           any room. They help define spaces within open-plan designs and offer a
           soft surface underfoot, enhancing the comfort and look of your home or
@@ -82,7 +82,7 @@ export const AreaRugstoAnchorYourSpace: React.FC = () => {
           rugs are a perfect choice. You can choose from bold patterns to make a
           statement or select more subtle, neutral designs that blend
           harmoniously with your décor
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

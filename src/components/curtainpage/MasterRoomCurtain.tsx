@@ -70,10 +70,10 @@ export const MasterRoomCurtain: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Master Room Curtain
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Your master bedroom is your personal retreat, and the right curtains
           can make it even more inviting. Our master room curtains are designed
           to create a peaceful and restful environment. From blackout options
@@ -81,7 +81,7 @@ export const MasterRoomCurtain: React.FC = () => {
           that add a sense of sophistication, we offer a range of choices to
           suit your style and functional needs. These curtains offer privacy
           while adding warmth and texture to your space
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

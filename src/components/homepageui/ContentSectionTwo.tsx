@@ -20,10 +20,10 @@ const ContentSectionTwo: React.FC = () => {
 
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center justify-center md:justify-start">
+          <h1 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg">🏢</i>
             Elevating Living Standards with Luxury Interior Design
-          </h2>
+          </h1>
           <p className="text-gray-600 mb-6 text-justify">
             Looking for the best interior design companies in Dubai? Interior
             design is not just about decoration; it&apos;s about improving your

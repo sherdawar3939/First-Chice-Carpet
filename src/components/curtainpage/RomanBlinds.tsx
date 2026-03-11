@@ -70,10 +70,10 @@ export const RomanBlinds: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Roller Blinds
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Roller blinds offer a sophisticated and tailored look for any room.
           Unlike traditional curtains, they fold up neatly when raised, creating
           a clean and uncluttered appearance. Our Roller blinds are available in
@@ -82,7 +82,7 @@ export const RomanBlinds: React.FC = () => {
           add a splash of color or keep things neutral and elegant, Roller
           blinds provide a stylish and functional window treatment that suits
           any design scheme.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

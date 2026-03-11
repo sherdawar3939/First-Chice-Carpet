@@ -70,10 +70,10 @@ export const MotorizedCurtain: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Motorized Curtain
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Experience the ultimate convenience and modern style with our
           motorized curtains. These automated curtains can be opened or closed
           with the touch of a button, offering a perfect blend of functionality
@@ -82,7 +82,7 @@ export const MotorizedCurtain: React.FC = () => {
           look while allowing you to control light and privacy effortlessly.
           With smart home integration options, our motorized curtains are
           perfect for those seeking innovative and stylish solutions
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

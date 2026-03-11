@@ -32,10 +32,10 @@ const CarpetContentSection: React.FC = () => {
 
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
+          <h1 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg text-white">🏢</i>
             Shop Premium Quality Custom Carpets In Dubai
-          </h2>
+          </h1>
           <p className="text-white mb-6 text-justify font-normal text-sm">
             At First Choice General Trading LLC, we offer a premium selection of
             carpets designed to enhance the style, comfort, and ambiance of your

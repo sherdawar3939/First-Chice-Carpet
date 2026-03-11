@@ -33,11 +33,11 @@ const CarpetContentSection: React.FC = () => {
 
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
+          <h1 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg text-white">🏢</i>
             Carpet Tiles for Dubai Marketplace: Stylish, Durable, and Affordable
             Flooring Solutions
-          </h2>
+          </h1>
           <p className="text-white mb-6 text-justify font-normal text-sm">
             Introduction Carpet tiles are rapidly becoming a top choice for
             modern homes and commercial spaces in Dubai. With their versatility,

@@ -33,10 +33,10 @@ export const CurtainContentSection: React.FC = () => {
 
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
+          <h1 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg text-white">🏢</i>
             Stylish and Elegant Curtains For Interior Design in Dubai
-          </h2>
+          </h1>
           <p className="text-white mb-6 text-justify font-normal text-sm">
             Curtains play an essential role in setting the mood and enhancing
             the style of any room. At First Choice General Trading LLC, we offer

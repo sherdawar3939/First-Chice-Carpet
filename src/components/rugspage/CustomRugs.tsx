@@ -70,17 +70,17 @@ export const CustomRugs: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Custom Rugs
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Every room has its own personality, and sometimes standard rug sizes
           and shapes just won’t do. That’s where custom rugs come in. If you’re
           looking for something truly unique, we offer bespoke rug solutions
           that allow you to create a rug that fits perfectly in your space. From
           custom sizes and shapes to personalized designs, our team at First
           Choice General Trading LLC is here to bring your vision to life.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

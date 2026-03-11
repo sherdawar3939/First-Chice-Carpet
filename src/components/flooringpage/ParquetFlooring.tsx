@@ -70,9 +70,9 @@ export const ParquetFlooring: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Parquet Flooring
-        </h1>
+        </h2>
 
         <p className="text-justify font-normal text-sm text-black/90">
           Parquet flooring exudes timeless elegance and sophistication, making

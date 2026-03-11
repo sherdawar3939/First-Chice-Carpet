@@ -70,10 +70,10 @@ export const LivingRoomCurtain: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Living Room Curtain
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           The living room is often the centerpiece of any home, and the right
           curtains can completely transform its ambiance. Our living room
           curtains are available in a variety of fabrics, colors, and patterns,
@@ -81,7 +81,7 @@ export const LivingRoomCurtain: React.FC = () => {
           aiming for a light, airy feel or a more formal and dramatic look, we
           provide curtains that enhance the atmosphere of your living space
           while offering privacy and light control
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

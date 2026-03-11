@@ -24,7 +24,8 @@ const companyDetails = {
   name: "Fixit Design",
   phone: "+971555243724",
   whatsapp: "+971555243724",
-  address: "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
+  address:
+    "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
 };
 
 export const RoundRugsWithUniqueDesignElement: React.FC = () => {
@@ -69,10 +70,10 @@ export const RoundRugsWithUniqueDesignElement: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Round Rugs With Unique Design Element
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           For those looking to break away from traditional rectangular rugs,
           round rugs offer a unique and creative solution. They add visual
           interest, soften sharp corners, and can make a room feel more inviting
@@ -83,7 +84,7 @@ export const RoundRugsWithUniqueDesignElement: React.FC = () => {
           interior design. Whether placed under a round dining table or in the
           center of a seating area, these rugs add an unexpected yet elegant
           touch to any space.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

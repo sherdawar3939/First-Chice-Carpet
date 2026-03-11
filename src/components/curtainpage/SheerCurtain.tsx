@@ -70,10 +70,10 @@ export const SheerCurtain: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Sheer Curtain
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Sheer curtains add a touch of elegance and softness to any room. They
           allow natural light to filter through while maintaining a sense of
           privacy. Our sheer curtains are ideal for creating a light, breezy
@@ -81,7 +81,7 @@ export const SheerCurtain: React.FC = () => {
           various styles and colors, they can be layered with heavier drapes for
           a more customized look or used alone to create a minimalist, modern
           appeal
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

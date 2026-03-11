@@ -33,10 +33,10 @@ const FlooringContentSection: React.FC = () => {
 
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
+          <h1 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg text-white">🏢</i>
             Trendy Flooring Dubai Options For Interior Design in Dubai
-          </h2>
+          </h1>
           <p className="text-white mb-6 text-justify font-normal text-sm">
             First Choice General Trading LLC is your go-to destination for
             stylish and high-quality flooring solutions in Dubai. Our wide range

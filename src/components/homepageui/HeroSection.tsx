@@ -68,9 +68,9 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center px-10">
               <div className="text-center text-white">
-                <h1 className="text-2xl md:text-5xl font-bold mb-4 py-10">
+                <h2 className="text-2xl md:text-5xl font-bold mb-4 py-10">
                   {slide.title}
-                </h1>
+                </h2>
                 <p className="text-base md:text-xl mb-6 font-light">
                   {slide.description}
                 </p>

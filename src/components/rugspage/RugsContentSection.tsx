@@ -33,10 +33,10 @@ const RugsContentSection: React.FC = () => {
 
         {/* Content Section */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
+          <h1 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg text-white">🏢</i>
             Revamp Interior Design in Dubai With Rugs
-          </h2>
+          </h1>
           <p className="text-white mb-6 text-justify font-normal text-sm">
             Rugs are one of the simplest and most effective ways to enhance the
             aesthetics of any room. Whether you&apos;re looking to bring warmth,

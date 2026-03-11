@@ -24,7 +24,8 @@ const companyDetails = {
   name: "Fixit Design",
   phone: "+971555243724",
   whatsapp: "+971555243724",
-  address: "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
+  address:
+    "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
 };
 
 const MosqueCarpet: React.FC = () => {
@@ -39,7 +40,7 @@ const MosqueCarpet: React.FC = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "/api/product?subcategory=Basement-carpet-tiles"
+          "/api/product?subcategory=Basement-carpet-tiles",
         );
         const data = await res.json();
         setProducts(data);
@@ -71,10 +72,10 @@ const MosqueCarpet: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Basement Carpet Tiles
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Specially designed for places of worship, our mosque carpets offer
           both comfort and elegance. These carpets are crafted with high-quality
           materials to ensure long-lasting durability while maintaining their
@@ -82,7 +83,7 @@ const MosqueCarpet: React.FC = () => {
           carpets create a peaceful and comfortable environment for prayer and
           reflection. We offer custom sizing and designs to fit any mosque
           space, ensuring both functionality and beauty
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

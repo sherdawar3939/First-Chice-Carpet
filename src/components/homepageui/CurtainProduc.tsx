@@ -70,16 +70,16 @@ const CutrainProduct: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Curtain
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Transform your windows with our elegant curtains and blinds. Whether
           you prefer a classic, modern, or minimalist look, we have a vast
           selection of fabrics and designs that will elevate your interiors. Our
           curtains are not only aesthetically pleasing but also functional,
           providing privacy and light control.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

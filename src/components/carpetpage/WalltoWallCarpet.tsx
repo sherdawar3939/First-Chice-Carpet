@@ -70,17 +70,17 @@ const WalltoWallCarpet: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Wall-to-Wall Carpet
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Wall-to-wall carpeting is the ultimate choice for those looking for a
           seamless and cohesive floor-covering solution. Our wall-to-wall
           carpets are designed to provide maximum coverage, offering comfort and
           elegance for luxury interior design Dubai. These carpets cater to both
           residential and commercial settings, ensuring durability and style for
           high-traffic areas.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

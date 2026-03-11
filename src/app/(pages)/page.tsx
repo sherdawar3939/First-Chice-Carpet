@@ -22,21 +22,21 @@ const page = () => {
       <HeroSection />
       <ContentSectionTwo />
       <div className="container mx-auto p-8 text-center justify-center items-center">
-        <h1 className="text-3xl font-bold mb-6 text-black/90">
+        <h2 className="text-3xl font-bold mb-6 text-black/90">
           Appointy can serve almost any industry segment
-        </h1>
-        <h1 className="text-sm font-normal mb-6 text-black/80">
+        </h2>
+        <h3 className="text-sm font-normal mb-6 text-black/80">
           Our appointment booking system is fit for all service-based local
           businesses, multi-location enterprises, franchises, and more.
-        </h1>
+        </h3>
         <CategorySection />
       </div>
 
       <ContentSection />
       <div className="text-center text-2xl font-bold my-4">
-        <h1 className="text-3xl font-bold mb-6 text-black/90 mt-20">
+        <h2 className="text-3xl font-bold mb-6 text-black/90 mt-20">
           Our Exclusive Product Collection For Interior Design Dubai
-        </h1>
+        </h2>
         <CarpetsProduct />
         <CurtainProduct />
         <RugsProduct />

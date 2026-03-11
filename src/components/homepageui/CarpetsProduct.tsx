@@ -70,17 +70,17 @@ const CarpetsProduct: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h3 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Carpets
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h3>
+        <h4 className="font-normal text-sm text-justify">
           Our diverse range of carpets brings warmth and comfort to any room.
           Choose from a variety of textures, colors, and patterns to create the
           perfect foundation for your home or office interiors. Our carpets are
           designed to add a touch of luxury while also offering durability for
           everyday use. All our products come from the best interior designers
           in Dubai.
-        </h1>
+        </h4>
       </div>
 
       {loading ? (

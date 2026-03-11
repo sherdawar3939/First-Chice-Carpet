@@ -10,17 +10,17 @@ export const FlooringDiscount = () => {
           <div className="text-[#14B1E7] text-4xl">
             <ShoppingFilled style={{ color: "#fa8c16", fontSize: "40px" }} />
           </div>
-          <h1 className="text-black/70 font-bold text-xl text-center py-5 tracking-widest">
+          <h2 className="text-black/70 font-bold text-xl text-center py-5 tracking-widest">
             Get No.1 Flooring Dubai
-          </h1>
+          </h2>
         </div>
         <div className="text-center mb-6">
-          <h1 className="text-sm font-normal text-black/70 text-justify px-5">
+          <h3 className="text-sm font-normal text-black/70 text-justify px-5">
             With our trendy flooring options, you can transform your space with
             our interior design company in Dubai. Contact us today to explore
             our selection and discover how we can help you achieve the perfect
             look for your interior design project in Dubai
-          </h1>
+          </h3>
         </div>
       </div>
     </div>

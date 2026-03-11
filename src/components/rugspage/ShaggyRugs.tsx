@@ -69,10 +69,10 @@ export const ShaggyRugs: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Shaggy Rugs
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           For a plush, luxurious feel, shaggy rugs are the ultimate option.
           Their deep pile and soft texture create a cozy and comfortable
           environment, perfect for bedrooms, living rooms, or lounging areas.
@@ -82,7 +82,7 @@ export const ShaggyRugs: React.FC = () => {
           in a variety of colors and thicknesses. Whether you prefer neutral
           tones for a sophisticated look or vibrant hues for a playful vibe,
           shaggy rugs offer unmatched comfort and style.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

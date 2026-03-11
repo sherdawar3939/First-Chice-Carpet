@@ -24,7 +24,8 @@ const companyDetails = {
   name: "Fixit Design",
   phone: "+971555243724",
   whatsapp: "+971555243724",
-  address: "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
+  address:
+    "Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE",
 };
 
 export const SisalRugsForNaturalEleganceandDurability: React.FC = () => {
@@ -69,10 +70,10 @@ export const SisalRugsForNaturalEleganceandDurability: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Sisal Rugs For Natural Elegance and Durability
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Sisal rugs bring a natural and understated beauty to any room. Made
           from the fibers of the agave plant, these rugs are eco-friendly,
           incredibly durable, and well-suited for high-traffic areas. With their
@@ -81,7 +82,7 @@ export const SisalRugsForNaturalEleganceandDurability: React.FC = () => {
           Sisal rugs not only offer durability but also add a warm, earthy tone
           to your space. Their coarse texture provides a grounding effect,
           making them perfect for your home.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

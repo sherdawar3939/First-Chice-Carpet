@@ -48,9 +48,9 @@ export const FlooringWhyChooseUs: React.FC = () => {
   return (
     <Card className="p-4 md:p-8">
       <div className="flex flex-col justify-center items-center text-center">
-        <h1 className="text-center text-4xl mb-4 font-medium text-black/90">
+        <h2 className="text-center text-4xl mb-4 font-medium text-black/90">
           Get Your Flooring Solutions at Your Doorstep
-        </h1>
+        </h2>
       </div>
 
       <List
@@ -62,12 +62,12 @@ export const FlooringWhyChooseUs: React.FC = () => {
               {/* Render dynamic icon here */}
               {item.icon}
               <div>
-                <h1 className="text-black/90 text-xl font-semibold">
+                <h2 className="text-black/90 text-xl font-semibold">
                   {item.title}
-                </h1>
-                <h1 className="text-black/70 text-sm font-normal text-justify">
+                </h2>
+                <h2 className="text-black/70 text-sm font-normal text-justify">
                   {item.description}
-                </h1>
+                </h2>
               </div>
             </div>
           </List.Item>

@@ -70,17 +70,17 @@ const OfficeCarpet: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Office Carpet
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Create a professional and inviting atmosphere in your office with our
           range of office carpets. Designed to withstand heavy foot traffic
           while maintaining their quality, our office carpets provide a perfect
           balance of functionality and aesthetics. They offer noise reduction,
           improved insulation, and a polished look that is ideal for corporate
           environments.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

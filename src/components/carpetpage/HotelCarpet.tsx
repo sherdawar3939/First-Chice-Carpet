@@ -70,16 +70,16 @@ const HotelCarpet: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Hotel Carpet
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           First impressions matter, and our hotel carpets are designed to leave
           a lasting one. Perfect for lobbies, hallways, guest rooms, and event
           spaces, our hotel carpets combine durability with luxury. These
           dedicated carpets for hotels are built to withstand high foot traffic
           while maintaining their appearance over time.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

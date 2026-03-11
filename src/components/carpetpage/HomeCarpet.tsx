@@ -70,10 +70,10 @@ const HomeCarpet: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Home Carpet
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           Add warmth and coziness to your living spaces with our exquisite
           collection of home carpets. Whether you&apos;re looking for something
           plush for your bedroom or a more durable option for high-traffic areas
@@ -81,7 +81,7 @@ const HomeCarpet: React.FC = () => {
           your home. Choose from a wide range of styles from our Dubai interior
           design company that will perfectly complement your décor while
           offering soft, luxurious comfort underfoot.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (

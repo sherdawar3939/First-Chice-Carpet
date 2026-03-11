@@ -70,16 +70,16 @@ const ResidentialCarpet: React.FC = () => {
   return (
     <div>
       <div className="w-screen justify-center text-center items-center px-5">
-        <h1 className="text-center text-3xl font-bold text-black/90 py-5 underline">
+        <h2 className="text-center text-3xl font-bold text-black/90 py-5 underline">
           Residential Carpet
-        </h1>
-        <h1 className="font-normal text-sm text-justify">
+        </h2>
+        <h3 className="font-normal text-sm text-justify">
           From cozy bedrooms to bustling family rooms, our residential carpets
           provide the perfect foundation for your home. They are best for
           residential interior design Dubai. Our carpet collection can meet the
           diverse needs of homeowners. They are durable, easy to maintain, and
           create a welcoming atmosphere for any room in the house.
-        </h1>
+        </h3>
       </div>
 
       {loading ? (
