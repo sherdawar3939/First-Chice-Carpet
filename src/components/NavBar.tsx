@@ -278,7 +278,7 @@ const NavBar = () => {
                 onClick={() =>
                   setOpenCategory(openCategory === "carpets" ? null : "carpets")
                 }
-                className={`block text-[#14B1E7] font-semibold ${
+                className={`block text-[#14B1E7] ${
                   openCategory === "carpets" ? "text-[#FFC100]" : ""
                 }`}
               >
@@ -308,7 +308,7 @@ const NavBar = () => {
                     openCategory === "curtains" ? null : "curtains",
                   )
                 }
-                className={`block text-[#14B1E7] font-semibold ${
+                className={`block text-[#14B1E7] ${
                   openCategory === "curtains" ? "text-[#FFC100]" : ""
                 }`}
               >
@@ -336,7 +336,7 @@ const NavBar = () => {
                 onClick={() =>
                   setOpenCategory(openCategory === "rugs" ? null : "rugs")
                 }
-                className={`block text-[#14B1E7] font-semibold ${
+                className={`block text-[#14B1E7] ${
                   openCategory === "rugs" ? "text-[#FFC100]" : ""
                 }`}
               >
@@ -366,7 +366,7 @@ const NavBar = () => {
                     openCategory === "flooring" ? null : "flooring",
                   )
                 }
-                className={`block text-[#14B1E7] font-semibold ${
+                className={`block text-[#14B1E7] ${
                   openCategory === "flooring" ? "text-[#FFC100]" : ""
                 }`}
               >
@@ -396,7 +396,7 @@ const NavBar = () => {
                     openCategory === "carpettiles" ? null : "carpettiles",
                   )
                 }
-                className={`block text-[#14B1E7] font-semibold ${
+                className={`block text-[#14B1E7] ${
                   openCategory === "carpettiles" ? "text-[#FFC100]" : ""
                 }`}
               >
