@@ -8,6 +8,7 @@ import { useRouter, usePathname } from "next/navigation";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const router = useRouter();
   const pathname = usePathname();
@@ -43,6 +44,46 @@ const NavBar = () => {
       </Link>
     );
   };
+
+  const carpetSubcategory = [
+    "Wall to Wall Carpet",
+    "Office Carpet",
+    "Home Carpet",
+    "Living Room Carpet",
+    "Mosque Carpet",
+    "Residential Carpet",
+    "Hotel Carpet",
+  ];
+
+  const curtainSubcategory = [
+    "Living Room Curtain",
+    "Sheer Curtain",
+    "Master Room Curtain",
+    "Motorized Curtain",
+    "Roller Blinds",
+  ];
+
+  const rugSubcategory = [
+    "Sisal Rugs",
+    "Area Rugs",
+    "Round Rugs",
+    "Shaggy Rugs",
+    "Custom Rugs",
+  ];
+
+  const flooringSubcategory = [
+    "Vinyl Flooring",
+    "Parquet Flooring",
+    "LVT Flooring",
+  ];
+
+  const carpettilesSubcategory = [
+    "Interlocking Carpet Tiles",
+    "Peel and Stick Carpet Tiles",
+    "Commercial Carpet Tiles",
+    "Residential Carpet Tiles",
+    "Basement Carpet Tiles",
+  ];
 
   return (
     <header className="bg-[#14B1E7] text-white sticky top-0 z-50">
@@ -110,11 +151,86 @@ const NavBar = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex space-x-8 flex-grow justify-center">
             <NavLink href="/">Home</NavLink>
-            <NavLink href="/carpets">Carpets</NavLink>
-            <NavLink href="/curtains">Curtains</NavLink>
-            <NavLink href="/rugs">Rugs</NavLink>
-            <NavLink href="/flooring">Flooring</NavLink>
-            <NavLink href="/carpettiles">Carpet tiles</NavLink>
+
+            <div className="relative group">
+              <NavLink href="/carpets">Carpets</NavLink>
+
+              <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg border border-gray-200 rounded-md divide-y divide-gray-200 min-w-[200px] mr-4">
+                {carpetSubcategory.map((item) => (
+                  <Link
+                    key={item}
+                    href={`/carpets/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="block px-6 py-3 hover:text-[#FFC100] whitespace-nowrap"
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative group">
+              <NavLink href="/curtains">Curtains</NavLink>
+
+              <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg border border-gray-200 rounded-md divide-y divide-gray-200 min-w-[200px] mr-4">
+                {curtainSubcategory.map((item) => (
+                  <Link
+                    key={item}
+                    href={`/curtains/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="block px-6 py-3 hover:text-[#FFC100] whitespace-nowrap"
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative group">
+              <NavLink href="/rugs">Rugs</NavLink>
+
+              <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg border border-gray-200 rounded-md divide-y divide-gray-200 min-w-[200px] mr-4">
+                {rugSubcategory.map((item) => (
+                  <Link
+                    key={item}
+                    href={`/rugs/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="block px-6 py-3 hover:text-[#FFC100] whitespace-nowrap"
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative group">
+              <NavLink href="/flooring">Flooring</NavLink>
+
+              <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg border border-gray-200 rounded-md divide-y divide-gray-200 min-w-[200px] mr-4">
+                {flooringSubcategory.map((item) => (
+                  <Link
+                    key={item}
+                    href={`/flooring/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="block px-6 py-3 hover:text-[#FFC100] whitespace-nowrap"
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative group">
+              <NavLink href="/carpettiles">Carpet tiles</NavLink>
+
+              <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg border border-gray-200 rounded-md divide-y divide-gray-200 min-w-[200px] mr-4">
+                {carpettilesSubcategory.map((item) => (
+                  <Link
+                    key={item}
+                    href={`/carpettiles/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    className="block px-6 py-3 hover:text-[#FFC100] whitespace-nowrap"
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>
             <NavLink href="/contactus">Contact us</NavLink>
           </div>
 
@@ -137,7 +253,7 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        {isMobileMenuOpen && (
+        {/* {isMobileMenuOpen && (
           <div className="lg:hidden bg-white text-[#14B1E7] shadow-md">
             <div className="flex flex-col space-y-2 p-4">
               <NavLink href="/">Home</NavLink>
@@ -146,6 +262,162 @@ const NavBar = () => {
               <NavLink href="/rugs">Rugs</NavLink>
               <NavLink href="/flooring">Flooring</NavLink>
               <NavLink href="/carpettiles">Carpet tiles</NavLink>
+              <NavLink href="/contactus">Contact us</NavLink>
+            </div>
+          </div>
+        )} */}
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden bg-white text-[#14B1E7] shadow-md">
+            <div className="flex flex-col space-y-2 p-4">
+              <NavLink href="/">Home</NavLink>
+
+              {/* Carpets */}
+              <Link
+                href="/carpets"
+                onClick={() =>
+                  setOpenCategory(openCategory === "carpets" ? null : "carpets")
+                }
+                className={`block text-[#14B1E7] font-semibold ${
+                  openCategory === "carpets" ? "text-[#FFC100]" : ""
+                }`}
+              >
+                Carpets
+              </Link>
+
+              {openCategory === "carpets" &&
+                carpetSubcategory.map((item: string) => {
+                  const slug = item.toLowerCase().replace(/\s+/g, "-");
+
+                  return (
+                    <Link
+                      key={item}
+                      href={`/carpets/${slug}`}
+                      className="block pl-4 py-1 text-[#14B1E7]"
+                    >
+                      {item}
+                    </Link>
+                  );
+                })}
+
+              {/* Curtains */}
+              <Link
+                href="/curtains"
+                onClick={() =>
+                  setOpenCategory(
+                    openCategory === "curtains" ? null : "curtains",
+                  )
+                }
+                className={`block text-[#14B1E7] font-semibold ${
+                  openCategory === "curtains" ? "text-[#FFC100]" : ""
+                }`}
+              >
+                Curtains
+              </Link>
+
+              {openCategory === "curtains" &&
+                curtainSubcategory.map((item: string) => {
+                  const slug = item.toLowerCase().replace(/\s+/g, "-");
+
+                  return (
+                    <Link
+                      key={item}
+                      href={`/curtains/${slug}`}
+                      className="block pl-4 py-1 text-[#14B1E7]"
+                    >
+                      {item}
+                    </Link>
+                  );
+                })}
+
+              {/* Rugs */}
+              <Link
+                href="/rugs"
+                onClick={() =>
+                  setOpenCategory(openCategory === "rugs" ? null : "rugs")
+                }
+                className={`block text-[#14B1E7] font-semibold ${
+                  openCategory === "rugs" ? "text-[#FFC100]" : ""
+                }`}
+              >
+                Rugs
+              </Link>
+
+              {openCategory === "rugs" &&
+                rugSubcategory.map((item: string) => {
+                  const slug = item.toLowerCase().replace(/\s+/g, "-");
+
+                  return (
+                    <Link
+                      key={item}
+                      href={`/rugs/${slug}`}
+                      className="block pl-4 py-1 text-[#14B1E7]"
+                    >
+                      {item}
+                    </Link>
+                  );
+                })}
+
+              {/* Flooring */}
+              <Link
+                href="/flooring"
+                onClick={() =>
+                  setOpenCategory(
+                    openCategory === "flooring" ? null : "flooring",
+                  )
+                }
+                className={`block text-[#14B1E7] font-semibold ${
+                  openCategory === "flooring" ? "text-[#FFC100]" : ""
+                }`}
+              >
+                Flooring
+              </Link>
+
+              {openCategory === "flooring" &&
+                flooringSubcategory.map((item: string) => {
+                  const slug = item.toLowerCase().replace(/\s+/g, "-");
+
+                  return (
+                    <Link
+                      key={item}
+                      href={`/flooring/${slug}`}
+                      className="block pl-4 py-1 text-[#14B1E7]"
+                    >
+                      {item}
+                    </Link>
+                  );
+                })}
+
+              {/* Carpet tiles */}
+              <Link
+                href="/carpettiles"
+                onClick={() =>
+                  setOpenCategory(
+                    openCategory === "carpettiles" ? null : "carpettiles",
+                  )
+                }
+                className={`block text-[#14B1E7] font-semibold ${
+                  openCategory === "carpettiles" ? "text-[#FFC100]" : ""
+                }`}
+              >
+                Carpet tiles
+              </Link>
+
+              {openCategory === "carpettiles" &&
+                carpettilesSubcategory.map((item: string) => {
+                  const slug = item.toLowerCase().replace(/\s+/g, "-");
+
+                  return (
+                    <Link
+                      key={item}
+                      href={`/carpettiles/${slug}`}
+                      className="block pl-4 py-1 text-[#14B1E7]"
+                    >
+                      {item}
+                    </Link>
+                  );
+                })}
+
               <NavLink href="/contactus">Contact us</NavLink>
             </div>
           </div>
