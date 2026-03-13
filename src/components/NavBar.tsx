@@ -293,6 +293,10 @@ const NavBar = () => {
                     <Link
                       key={item}
                       href={`/carpets/${slug}`}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setOpenCategory(null);
+                      }}
                       className="block pl-4 py-1 text-[#14B1E7]"
                     >
                       {item}
@@ -323,6 +327,10 @@ const NavBar = () => {
                     <Link
                       key={item}
                       href={`/curtains/${slug}`}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setOpenCategory(null);
+                      }}
                       className="block pl-4 py-1 text-[#14B1E7]"
                     >
                       {item}
@@ -351,6 +359,10 @@ const NavBar = () => {
                     <Link
                       key={item}
                       href={`/rugs/${slug}`}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setOpenCategory(null);
+                      }}
                       className="block pl-4 py-1 text-[#14B1E7]"
                     >
                       {item}
@@ -381,6 +393,10 @@ const NavBar = () => {
                     <Link
                       key={item}
                       href={`/flooring/${slug}`}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setOpenCategory(null);
+                      }}
                       className="block pl-4 py-1 text-[#14B1E7]"
                     >
                       {item}
@@ -411,6 +427,10 @@ const NavBar = () => {
                     <Link
                       key={item}
                       href={`/carpettiles/${slug}`}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setOpenCategory(null);
+                      }}
                       className="block pl-4 py-1 text-[#14B1E7]"
                     >
                       {item}
