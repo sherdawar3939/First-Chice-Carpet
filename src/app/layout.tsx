@@ -41,6 +41,22 @@ export default function RootLayout({
   gtag('config', 'AW-16827241503');
   `}
         </Script>
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+   function gtag_report_conversion(url) {
+     var callback = function () {
+       if (typeof(url) != 'undefined') {
+      window.location = url;
+     }
+   };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16827241503/pc3lCMrG4cAbEJ-o7dc-',
+      'event_callback': callback
+  });
+  return false;
+}
+`}
+        </Script>
         <AntdRegistry>
           <SessionProvider>{children}</SessionProvider>
         </AntdRegistry>
