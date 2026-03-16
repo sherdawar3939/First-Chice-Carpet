@@ -37,7 +37,9 @@ export default function RootLayout({
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-M3KB9ZX5X1');`}
+  gtag('config', 'G-M3KB9ZX5X1');
+  gtag('config', 'AW-16827241503');
+  `}
         </Script>
         <AntdRegistry>
           <SessionProvider>{children}</SessionProvider>
