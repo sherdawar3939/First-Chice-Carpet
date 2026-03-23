@@ -24,6 +24,10 @@ export default function RootLayout({
           name="google-site-verification"
           content="tzGhhrkOka3QpWhp7_omdhnoqbYoHmgCU4cKvEjX1FY"
         />
+        <meta
+          name="p:domain_verify"
+          content="d51fe3b106ca0b9c8e1a74d760f8e106"
+        />
         {/* Google Tag Manager Script */}
         <Script id="gtm-script" strategy="beforeInteractive">
           {`
@@ -35,10 +39,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `}
         </Script>
       </head>
-      
+
       {/* <!-- Google tag (gtag.js) --> */}
       <body className={inter.className}>
-
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
