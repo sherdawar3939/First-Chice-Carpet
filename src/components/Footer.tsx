@@ -8,6 +8,7 @@ import {
   FaYoutube,
   FaWhatsapp,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -72,7 +73,10 @@ const Footer = () => {
 
         <div>
           <h3 className="text-xl font-bold mb-4">Our Address</h3>
-          <p>Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen Deira Dubai UAE</p>
+          <p>
+            Office # 1201-19, 12th Floor, Al Salemiyah Tower, Rigga Al Buteen
+            Deira Dubai UAE
+          </p>
         </div>
       </div>
 
@@ -84,16 +88,41 @@ const Footer = () => {
             <a href="https://www.fiverr.com/sakibsarker0"> © Copyright 2026</a>
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="/" className="text-white hover:text-yellow-400">
+            <a
+              href="https://www.facebook.com/profile.php?id=61566940882069#"
+              className="text-white hover:text-yellow-400"
+            >
               <FaFacebook />
             </a>
-            <a href="/" className="text-white hover:text-yellow-400">
+            <a
+              href="https://www.instagram.com/fc_flooring/"
+              className="text-white hover:text-yellow-400"
+            >
               <FaInstagram />
             </a>
-
+            <a
+              href="https://www.linkedin.com/company/first-choice-flooring-dubai/"
+              className="text-white hover:text-yellow-400"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.pinterest.com/Fc_Flooring/"
+              className="text-white hover:text-yellow-400"
+            >
+              <FaPinterest />
+            </a>
+            <a
+              href="https://x.com/FCF_Flooring"
+              className="text-white hover:text-yellow-400"
+            >
+              <FaXTwitter />
+            </a>
             <a href="/" className="text-white hover:text-yellow-400">
               <FaYoutube />
             </a>
+            <a href="/" className="text-white hover:text-yellow-400"></a>
+            <a href="/" className="text-white hover:text-yellow-400"></a>
           </div>
         </div>
       </div>

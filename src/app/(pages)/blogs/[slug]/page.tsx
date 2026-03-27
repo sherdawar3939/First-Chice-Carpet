@@ -84,6 +84,8 @@ const SingleBlogPage: React.FC = () => {
     );
   }
 
+  const lines = post.description.split("\n");
+
   return (
     <div className="container mx-auto px-4 py-8 bg-white">
       <article className="w-full mx-auto overflow-hidden">
@@ -126,9 +128,27 @@ const SingleBlogPage: React.FC = () => {
             )}
           </div>
           <Divider className="my-6" />
-          <h1 className="text-sm font-normal leading-relaxed mb-8 text-black/70">
+          {/* <h1 className="text-sm font-normal leading-relaxed mb-8 text-black/70">
             {post.description}
-          </h1>
+          </h1> */}
+
+          <div className="text-black/80 leading-relaxed space-y-4">
+            {lines.map((line, i) => {
+              if (line.length < 50) {
+                return (
+                  <h2 key={i} className="text-2xl font-bold">
+                    {line}
+                  </h2>
+                );
+              }
+
+              return (
+                <p key={i} className="text-base">
+                  {line}
+                </p>
+              );
+            })}
+          </div>
         </div>
       </article>
     </div>

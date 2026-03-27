@@ -1,7 +1,20 @@
 import React from "react";
 import Image from "next/image"; // Importing Next.js optimized Image component
 
-const CarpetContentSection: React.FC = () => {
+type CarpetContentSectionProps = {
+  title?: string;
+  description?: string;
+};
+
+const CarpetContentSection: React.FC<CarpetContentSectionProps> = ({
+  title = " Shop Premium Quality Custom Carpets In Dubai",
+  description = `At First Choice General Trading LLC, we offer a premium selection of
+            carpets designed to enhance the style, comfort, and ambiance of your
+            space. Our interior design company in Dubai has the perfect carpet solutions tailored to meet
+            your specific needs. Our diverse range of carpets includes
+            everything from luxurious wall-to-wall options to specialized
+            carpets for hotels and mosques.`,
+}) => {
   return (
     <div className="relative bg-gray-50 py-10 px-4 group">
       {/* Background Image */}
@@ -34,18 +47,10 @@ const CarpetContentSection: React.FC = () => {
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center md:justify-start">
             <i className="mr-2 text-lg text-white">🏢</i>
-            Shop Premium Quality Custom Carpets In Dubai
+            {title}
           </h1>
           <p className="text-white mb-6 text-justify font-normal text-sm">
-            At First Choice General Trading LLC, we offer a premium selection of
-            carpets designed to enhance the style, comfort, and ambiance of your
-            space. Our interior design
-            <br />
-            <br />
-            company in Dubai has the perfect carpet solutions tailored to meet
-            your specific needs. Our diverse range of carpets includes
-            everything from luxurious wall-to-wall options to specialized
-            carpets for hotels and mosques.
+            {description}
           </p>
 
           {/* Buttons */}

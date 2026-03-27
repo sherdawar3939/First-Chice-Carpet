@@ -17,8 +17,10 @@ export interface BlogPost {
 
 const { Title, Paragraph } = Typography;
 
-interface MainBlogPostProps
-  extends Omit<BlogPost, "category" | "subcategory"> {}
+interface MainBlogPostProps extends Omit<
+  BlogPost,
+  "category" | "subcategory"
+> {}
 
 const MainBlogPost: React.FC<MainBlogPostProps> = ({
   _id,
@@ -36,7 +38,24 @@ const MainBlogPost: React.FC<MainBlogPostProps> = ({
           className="w-full h-64 object-cover rounded-md transition-transform duration-300 hover:scale-95"
         />
         <Title level={3}>{title}</Title>
-        <Paragraph className="text-gray-600">{description}</Paragraph>
+        {/* <Paragraph className="text-gray-600">{description}</Paragraph> */}
+        <div className="text-gray-600 leading-relaxed space-y-3">
+          {description.split("\n").map((line, i) => {
+            if (line.length < 50) {
+              return (
+                <h4 key={i} className="text-base font-semibold">
+                  {line}
+                </h4>
+              );
+            }
+
+            return (
+              <p key={i} className="text-sm">
+                {line}
+              </p>
+            );
+          })}
+        </div>
         <Space>
           <CalendarOutlined />
           <span className="text-gray-500">

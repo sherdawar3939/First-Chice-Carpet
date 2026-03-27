@@ -3,9 +3,9 @@ import HomeCarpet from "@/components/carpetpage/HomeCarpet";
 import HotelCarpet from "@/components/carpetpage/HotelCarpet";
 import LivingRoomCarpet from "@/components/carpetpage/LivingRoomCarpet";
 import MosqueCarpet from "@/components/carpetpage/MosqueCarpet";
-import OfficeCarpet from "@/components/carpetpage/OfficeCarpet";
 import ResidentialCarpet from "@/components/carpetpage/ResidentialCarpet";
 import WalltoWallCarpet from "@/components/carpetpage/WalltoWallCarpet";
+import OfficeCarpetContent from "@/components/OfficeCarpetContent";
 import { notFound } from "next/navigation";
 
 type Props = {
@@ -24,8 +24,7 @@ const page = ({ params }: Props) => {
   if (type === "office-carpet")
     return (
       <>
-        <OfficeCarpet />
-        <CarpetDiscount />
+        <OfficeCarpetContent></OfficeCarpetContent>
       </>
     );
   if (type === "home-carpet")
