@@ -6,7 +6,7 @@ const OfficeCarpetContent = () => {
   return (
     <>
       <CarpetContentSection
-        title="Reliable Office Carpet"
+        title="Comfort Office Carpet"
         description="At First Choice Carpet, we provide carpet solutions designed for modern offices and commercial interiors across Dubai. Workspaces require flooring that combines durability, comfort, and a professional appearance. Our range of office carpets in Dubai is selected to meet the practical requirements of corporate offices, meeting rooms, and shared workspaces."
       />
 
@@ -14,9 +14,9 @@ const OfficeCarpetContent = () => {
 
       <div className="w-full px-6 md:px-12 lg:px-20 py-10">
         <div className="w-full max-w-7xl mx-auto space-y-6">
-          <h1 className="text-3xl font-bold text-center">
+          <h2 className="text-3xl font-bold text-center">
             Office Carpets Dubai
-          </h1>
+          </h2>
 
           <p className="text-gray-700 leading-relaxed">
             As a reliable office carpet supplier, we help businesses choose
